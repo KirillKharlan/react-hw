@@ -1,32 +1,36 @@
 import donecircle from "./images/donecircle.svg";
 import nodonecircle from "./images/nodonecircle.svg";
-import "./static/styles/Posts.css";
-import { IProps} from "./types";
+import "./static/styles/Posts.module.css";
+import { IProps, IPostCard, ITag } from "./types"; 
+import { PostCard } from './postCard';
+
+
+const truncateText = (text: string, maxLength: number): string => {
+    if (text.length > maxLength) {
+        return text.substring(0, maxLength) + '...';
+    }
+    return text;
+};
 
 
 export function Posts(props: IProps) {
     const { products, tags } = props;
+    const descriptionMaxLength = 150;
+    const postCardsData: IPostCard[] = products.map((post) => ({
+        id: post.id,
+        title: post.title,
+        shortDescription: truncateText(post.description, descriptionMaxLength), 
+        image: post.image,
+        tags: post.tags,
+    }));
     return (
         <div className="App">
             <div className="posts">
-                {products.map((post) => (
-                    <div key={post.id} className="post-item">
-                        {post.image && (
-                           <img className="post-image" src={post.image} alt={post.title} />
-                        )}
-                        <h2 className="post-title">{post.title}</h2>
-                        <p className="post-description">{post.description}</p>
-                        <div className="post-tags-container">
-                            {post.tags.map(tag => (
-                                <span key={tag.id} className="post-tag">
-                                    #{tag.name}
-                                </span>
-                            ))}
-                        </div>
-                        <div className="post-meta">
-                           <p>Автор ID: {post.userId}</p>
-                        </div>
-                    </div>
+                {postCardsData.map((cardData: IPostCard) => (
+                    <PostCard 
+                        key={cardData.id} 
+                        {...cardData}
+                    />
                 ))}
             </div>
             <div className="filter">
@@ -66,7 +70,7 @@ export function Posts(props: IProps) {
                 </div>
                 <div className="filter-tags-part">
                     <div className="tags-part">
-                        <h1 className="tags-text"></h1>
+                        <h1 className="tags-text">Пошук постів за тегами</h1>
                         <div className="tags">
                             {tags.map((tag) => (
                                 <div key={tag.id} className="tag-item">

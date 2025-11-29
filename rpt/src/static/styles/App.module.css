@@ -26,7 +26,7 @@
     background: #FAF1F1;
     border-bottom: 1px solid #BBB4B4;
 }
-.main-page-button{
+.mainPageButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,7 +40,7 @@
     border-radius: 20px;
     order: 0;
 }
-.main-button-text{
+.mainButtonText{
     width: 321px;
     height: 44px;
     font-family: 'Quicksand';
@@ -50,7 +50,7 @@
     line-height: 44px;
     color: #FFFFFF;
 }
-.allposts-page-button{
+.allpostspageButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,7 +64,7 @@
     border-radius: 20px;
     order: 1;
 }
-.allposts-button-text{
+.allpostsButtonText{
     width: 168px;
     height: 44px;
     font-family: 'Quicksand';
@@ -75,7 +75,7 @@
     color: #FFFFFF;
     order: 0;
 }
-.createpost-page-button{
+.createpostPageButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -89,7 +89,7 @@
     border-radius: 20px;
     order: 2;
 }
-.createpost-button-text{
+.createpostButtonText{
     width: 252px;
     height: 44px;
     font-family: 'Quicksand';
@@ -100,7 +100,7 @@
     color: #FFFFFF;
     order: 0;
 }
-.profile-and-language-buttons{
+.profileAndLanguageButtons{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,7 +109,7 @@
     gap: 20px;
     order: 3;
 }
-.language-button{
+.languageButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,7 +123,7 @@
     border-radius: 20px;
     order: 0;
 }
-.language-button-text{
+.languageButtonText{
     width: 96px;
     height: 44px;
     font-family: 'Quicksand';
@@ -134,7 +134,7 @@
     color: #FFFFFF;
     order: 0;
 }
-.profile-button{
+.profileButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -148,7 +148,7 @@
     border-radius: 20px;
     order: 1;
 }
-.profile-image{
+.profileImage{
     width: 60px;
     height: 60px;
     border-radius: 20px;
@@ -164,7 +164,7 @@
     background: #FAF1F1;
     order: 1;
 }
-.technical-part-texts{
+.technicalPartTexts{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,7 +175,7 @@
     background: #FAF1F1;
     order: 0;
 }
-.backend-texts-div{
+.backendTextsDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +186,7 @@
     background: #FAF1F1;
     order: 0;
 }
-.backend-text{
+.backendText{
     width: 1800px;
     height: 130px;
     font-family: 'Quicksand';
@@ -197,7 +197,7 @@
     color: #000000;
     order: 0;
 }
-.backend-text-main{
+.backendTextMain{
     width: 1800px;
     height: 230px;
     font-family: 'Quicksand';
@@ -208,7 +208,7 @@
     color: #000000;
     order: 1;
 }
-.frontend-texts-div{
+.frontendTextsDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -220,7 +220,10 @@
     background: #FAF1F1;
     order: 1;
 }
-.description-part-text{
+.frontendText{
+    
+}
+.descriptionPartText{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,7 +235,7 @@
     background: #FAF1F1;
     order: 1;
 }
-.description-text{
+.descriptionText{
     width: 1802px;
     height: 140px;
     font-family: 'Quicksand';
@@ -255,7 +258,7 @@
     background: #FAF1F1;
     order: 2;
 }
-.footer-author-div{
+.footerAuthorDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,7 +271,7 @@
     background: #FAF1F1;
     order: 0;
 }
-.footer-author{
+.footerAuthor{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -281,7 +284,7 @@
     border-radius: 20px;
     order: 0;
 }
-.footer-author-text{
+.footerAuthorText{
     width: 526px;
     height: 44px;
     font-family: 'Quicksand';
@@ -292,7 +295,7 @@
     color: #2382FF;
     order: 0;
 }
-.footer-social-networks-div{
+.footerSocialNetworksDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -304,7 +307,7 @@
     background: #FAF1F1;
     order: 1;
 }
-.footer-social-networks-text-div{
+.footerSocialNetworksTextDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -317,7 +320,7 @@
     border-radius: 20px;
     order: 0;
 }
-.footer-social-networks-text{
+.footerSocialNetworksText{
     width: 420px;
     height: 44px;
     font-family: 'Quicksand';
@@ -328,7 +331,7 @@
     color: #2382FF;
     order: 0;
 }
-.footer-social-networks-icons-div{
+.footerSocialNetworksIconsDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -341,7 +344,7 @@
     border-radius: 20px;
     order: 1;
 }
-.footer-telegram-icon-div{/* tg */
+.footerTelegramIconDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -354,13 +357,13 @@
     border-radius: 20px;
     order: 0;
 }
-.telegram-icon{
+.telegramIcon{
     border-radius: 20px;
     width: 60px;
     height: 60px;
     object-fit: cover;
 }
-.footer-instagram-icon-div{
+.footerInstagramIconDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -373,13 +376,13 @@
     border-radius: 20px;
     order: 1;
 }
-.instagram-icon{
+.instagramIcon{
     border-radius: 20px;
     width: 60px;
     height: 60px;
     object-fit: cover;
 }
-.footer-tiktok-icon-div{
+.footerTiktokIconDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -392,7 +395,7 @@
     border-radius: 20px;
     order: 2;
 }
-.tiktok-icon{
+.tiktokIcon{
     border-radius: 20px;
     width: 60px;
     height: 60px;
