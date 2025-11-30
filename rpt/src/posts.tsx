@@ -1,6 +1,6 @@
 import donecircle from "./images/donecircle.svg";
 import nodonecircle from "./images/nodonecircle.svg";
-import "./static/styles/Posts.module.css";
+import style from "./static/styles/Posts.module.css";
 import { IProps, IPostCard, ITag } from "./types"; 
 import { PostCard } from './postCard';
 
@@ -24,8 +24,8 @@ export function Posts(props: IProps) {
         tags: post.tags,
     }));
     return (
-        <div className="App">
-            <div className="posts">
+        <div className={style.App}>
+            <div className={style.posts}>
                 {postCardsData.map((cardData: IPostCard) => (
                     <PostCard 
                         key={cardData.id} 
@@ -33,51 +33,49 @@ export function Posts(props: IProps) {
                     />
                 ))}
             </div>
-            <div className="filter">
-                <div className="filter-likes-part">
-                    <div className="search-field">
-                        <h1 className="search-field-text">Пошук постів</h1>
+            <div className={style.filter}>
+                <div className={style.filterLikesPart}>
+                    <h1 className={style.searchFieldText}>Пошук постів</h1>
                     </div>
-                    <div className="search-likes">
-                        <h1 className="likes-text">Пошук постів по лайкам</h1>
-                        <div className="likes-fields">
-                            <div className="likes-field-one">
-                                <img className="field-one-img" src={donecircle} alt="" />
-                                <div className="field-one-text-div">
-                                    <h1 className="field-one-text">0 Лайків</h1>
+                    <div className={style.searchLikes}>
+                        <h1 className={style.likesText}>Пошук постів по лайкам</h1>
+                        <div className={style.likesFields}>
+                            <div className={style.likesFieldOne}>
+                                <img className={style.fieldOneImg} src={donecircle} alt="" />
+                                <div className={style.fieldOneTextDiv}>
+                                    <h1 className={style.fieldOneText}>0 Лайків</h1>
                                 </div>
                             </div>
-                            <div className="likes-field-two">
-                                <img className="field-two-img" src={nodonecircle} alt="" />
-                                <div className="field-two-text-div">
-                                    <h1 className="field-two-text">Більше 0</h1>
+                            <div className={style.likesFieldTwo}>
+                                <img className={style.fieldTwoImg} src={nodonecircle} alt="" />
+                                <div className={style.fieldTwoTextDiv}>
+                                    <h1 className={style.fieldTwoText}>Більше 0</h1>
                                 </div>
                             </div>
-                            <div className="likes-field-three">
-                                <img className="field-three-img" src={nodonecircle} alt="" />
-                                <div className="field-three-text-div">
-                                    <h1 className="field-three-text">Більше 50</h1>
+                            <div className={style.likesFieldThree}>
+                                <img className={style.fieldThreeImg} src={nodonecircle} alt="" />
+                                <div className={style.fieldThreeTextDiv}>
+                                    <h1 className={style.fieldThreeText}>Більше 50</h1>
                                 </div>
                             </div>
-                            <div className="likes-field-four">
-                                <img className="field-four-img" src={nodonecircle} alt="" />
-                                <div className="field-four-text-div">
-                                    <h1 className="field-four-text">Більше 100</h1>
+                            <div className={style.likesFieldFour}>
+                                <img className={style.fieldFourImg} src={nodonecircle} alt="" />
+                                <div className={style.fieldFourTextDiv}>
+                                    <h1 className={style.fieldFourText}>Більше 100</h1>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="filter-tags-part">
-                    <div className="tags-part">
-                        <h1 className="tags-text">Пошук постів за тегами</h1>
-                        <div className="tags">
+                <div className={style.filterTagsPart}>
+                    <div className={style.tagsPart}>
+                        <h1 className={style.tagsText}>Пошук постів за тегами</h1>
+                        <div className={style.tags}>
                             {tags.map((tag) => (
-                                <div key={tag.id} className="tag-item">
-                                    <h1 className="tag-item-text">{tag.name}</h1>
+                                <div key={tag.id} className={style.tagItem}>
+                                    <h1 className={style.tagItemText}>{tag.name}</h1>
                                 </div>
                             ))}
-                        </div>
                     </div>
                 </div>
             </div>

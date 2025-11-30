@@ -31,7 +31,7 @@
     top: 0px;
     background: #FAF1F1;
 }
-.filter-likes-part{
+.filterLikesPart{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@
     top: 0px;
     background: #FAF1F1;
 }
-.search-field{
+.searchField{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -60,7 +60,7 @@
     order: 0;
     align-self: stretch;
 }
-.search-field-text{
+.searchFieldText{
     width: 227px;
     height: 40px;
     font-family: 'Quicksand';
@@ -71,7 +71,7 @@
     color: #2382FF;
     order: 0;
 }
-.search-likes{
+.searchLikes{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@
     order: 1;
     align-self: stretch;
 }
-.likes-text{
+.likesText{
     width: 470px;
     height: 60px;
     font-family: 'Quicksand';
@@ -100,7 +100,7 @@
     color: #2382FF;
     order: 0;
 }
-.likes-fields{
+.likesFields{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,7 +115,7 @@
     border-radius: 20px;
     order: 1;
 }
-.likes-field-one{
+.likesFieldOne{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -128,12 +128,12 @@
     border-radius: 20px;
     order: 0;
 }
-.field-one-img{
+.fieldOneImg{
     width: 35px;
     height: 35px;
     order: 0;
 }
-.field-one-text-div{
+.fieldOneTextDiv{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -149,7 +149,7 @@
     border-radius: 20px;
     order: 1;
 }
-.field-one-text{
+.fieldOneText{
     width: 109px;
     height: 30px;
     font-family: 'Quicksand';
@@ -160,7 +160,7 @@
     color: #2382FF;
     order: 0;
 }
-.likes-field-two{
+.likesFieldTwo{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,12 +175,12 @@
     order: 1;
     flex-grow: 0;
 }
-.field-two-img{
+.fieldTwoImg{
     width: 30px;
     height: 30px;
     order: 0;
 }
-.field-two-text-div{
+.fieldTwoTextDiv{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -196,7 +196,7 @@
     border-radius: 20px;
     order: 1;
 }
-.field-two-text{
+.fieldTwoText{
     width: 112px;
     height: 30px;
     font-family: 'Quicksand';
@@ -207,7 +207,7 @@
     color: #2382FF;
     order: 0;
 }
-.likes-field-three{
+.likesFieldThree{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -220,12 +220,12 @@
     border-radius: 20px;
     order: 2;
 }
-.field-three-img{
+.fieldThreeImg{
     width: 30px;
     height: 30px;
     order: 0;
 }
-.field-three-text-div{
+.fieldThreeTextDiv{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -241,7 +241,7 @@
     border-radius: 20px;
     order: 1;
 }
-.field-three-text{
+.fieldThreeText{
     width: 126px;
     height: 30px;
     font-family: 'Quicksand';
@@ -253,7 +253,7 @@
     flex: none;
     order: 0;
 }
-.likes-field-four{
+.likesFieldFour{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -266,12 +266,12 @@
     border-radius: 20px;
     order: 3;
 }
-.field-four-img{
+.fieldFourImg{
     width: 30px;
     height: 30px;
     order: 0;
 }
-.field-four-text-div{
+.fieldFourTextDiv{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -287,7 +287,7 @@
     border-radius: 20px;
     order: 1;
 }
-.field-four-text{
+.fieldFourText{
     width: 136px;
     height: 30px;
     font-family: 'Quicksand';
@@ -298,7 +298,7 @@
     color: #2382FF;
     order: 0;
 }
-.filter-tags-part{
+.filterTagsPart{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -310,7 +310,7 @@
     top: 610px;
     background: #FAF1F1;
 }
-.tags-part{
+.tagsPart{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -325,7 +325,7 @@
     order: 0;
     align-self: stretch;
 }
-.tags-text{
+.tagsText{
     width: 440px;
     height: 60px;
     font-family: 'Quicksand';
@@ -353,3 +353,5 @@
     background: #FAF1F1;
     order: 1;
 }
+.tagItem{}
+.tagItemText{}
