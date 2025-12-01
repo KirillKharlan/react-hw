@@ -1,0 +1,139 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+    gap: 10px;
+    width: 1920px;
+    height: 80px;
+    background: #FAF1F1;
+    border-bottom: 1px solid #BBB4B4;
+}
+.mainPageButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 380px;
+    height: 60px;
+    background: #2382FF;
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    order: 0;
+}
+.mainButtonText{
+    width: 321px;
+    height: 44px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.allpostspageButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 380px;
+    height: 60px;
+    background: #2382FF;
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    order: 1;
+}
+.allpostsButtonText{
+    width: 168px;
+    height: 44px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FFFFFF;
+    order: 0;
+}
+.createpostPageButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 380px;
+    height: 60px;
+    background: #2382FF;
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    order: 2;
+}
+.createpostButtonText{
+    width: 252px;
+    height: 44px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FFFFFF;
+    order: 0;
+}
+.profileAndLanguageButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    order: 3;
+}
+.languageButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 180px;
+    height: 60px;
+    background: #2382FF;
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    order: 0;
+}
+.languageButtonText{
+    width: 96px;
+    height: 44px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FFFFFF;
+    order: 0;
+}
+.profileButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 60px;
+    height: 60px;
+    background: #FAF1F1;
+    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    order: 1;
+}
+.profileImage{
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}

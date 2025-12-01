@@ -12,19 +12,6 @@ export interface IPost {
     tags: ITag[];
 }
 
-export interface IProps {
-    products: IPost[];
-    tags: ITag[];
-}
-
-export interface IPostCard{
-    id: number;
-    title: string;
-    shortDescription: string;
-    image: string;
-    tags: ITag[];
-}
-
 export interface IPropsPostCard {
-    postCards: IPostCard[];
+    post: IPost
 }

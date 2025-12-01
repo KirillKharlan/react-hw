@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+    max-width: 1920px;
+    height: 1080px;
+    background: #FAF1F1;
+}
+

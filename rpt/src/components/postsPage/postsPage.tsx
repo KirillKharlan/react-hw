@@ -1,38 +1,18 @@
-import donecircle from "./images/donecircle.svg";
-import nodonecircle from "./images/nodonecircle.svg";
-import style from "./static/styles/Posts.module.css";
-import { IProps, IPostCard, ITag } from "./types"; 
-import { PostCard } from './postCard';
+import donecircle from "../../images/donecircle.svg";
+import nodonecircle from "../../images/nodonecircle.svg";
+import style from "./postsPage.module.css";
+import { IProps } from "./types"; 
+import { PostCard } from '../postCard/postCard';
 
 
-const truncateText = (text: string, maxLength: number): string => {
-    if (text.length > maxLength) {
-        return text.substring(0, maxLength) + '...';
-    }
-    return text;
-};
 
 
-export function Posts(props: IProps) {
-    const { products, tags } = props;
-    const descriptionMaxLength = 150;
-    const postCardsData: IPostCard[] = products.map((post) => ({
-        id: post.id,
-        title: post.title,
-        shortDescription: truncateText(post.description, descriptionMaxLength), 
-        image: post.image,
-        tags: post.tags,
-    }));
+export function PostsPage(props: IProps) {
+    const posts  = props.posts;
+    const tags = props.tags;
     return (
         <div className={style.App}>
             <div className={style.posts}>
-                {postCardsData.map((cardData: IPostCard) => (
-                    <PostCard 
-                        key={cardData.id} 
-                        {...cardData}
-                    />
-                ))}
-            </div>
             <div className={style.filter}>
                 <div className={style.filterLikesPart}>
                     <h1 className={style.searchFieldText}>Пошук постів</h1>
@@ -73,12 +53,16 @@ export function Posts(props: IProps) {
                         <div className={style.tags}>
                             {tags.map((tag) => (
                                 <div key={tag.id} className={style.tagItem}>
-                                    <h1 className={style.tagItemText}>{tag.name}</h1>
+                                    <h1 className={style.tagText}>{tag.name}</h1>
                                 </div>
                             ))}
                     </div>
                 </div>
             </div>
+            </div>
+            { posts.map((post) => (
+                <PostCard key={post.id} post={post} />
+            ))}
         </div>
-    )
+    );
 }

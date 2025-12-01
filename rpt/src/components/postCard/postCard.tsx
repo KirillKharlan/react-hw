@@ -1,23 +1,22 @@
 import React from 'react';
 import likesimg from "./images/likesimg.svg"; 
-import { IPostCard, ITag } from './types'; 
+import { IPropsPostCard} from './types'; 
 import style from "./static/styles/Posts.module.css";
 
 
-export function PostCard(props: IPostCard) { 
-  const { id, title, shortDescription, image, tags } = props;
-  const visibleTags = tags.slice(0, 3); 
+export function PostCard(props: IPropsPostCard) { 
+  const post = props.post;
   return (
     <div className={style.postCard}>
       <div className={style.postHeaer}>
-        <h1 className={style.postHeaderText}>{title}</h1> 
+        <h1 className={style.postHeaderText}>{post.title}</h1> 
       </div>
       <div className={style.postMain}>
         <div className={style.postImageDiv}>
-            {image && <img className={style.postImage} src={image} alt={title} />}
+            <img className={style.postImage} src={post.image} alt="" />
         </div>
         <div className={style.postDescriptionDiv}>
-            <h1 className={style.postDescription}>{shortDescription}</h1>
+            <h1 className={style.postDescription}>{post.description}</h1>
         </div>
       </div>
       <div className={style.postFooter}>
@@ -31,13 +30,10 @@ export function PostCard(props: IPostCard) {
                 <h1 className={style.postTagsText}>Tags:</h1>
             </div>
             <div className={style.postTagsList}>
-                {visibleTags.map((tag: ITag, index: number) => (
-                    <h1 
-                        key={tag.id}
-                        className={style[`${index === 0 ? 'first' : index === 1 ? 'second' : 'third'}Tag`]} 
-                    >
-                        #{tag.name}
-                    </h1>
+                {post.tags.map((tag) => (
+                    <div key={tag.id} className={style.postTagItem}>
+                        <h1 className={style.postTagText}>{tag.name}</h1>
+                    </div>
                 ))}
             </div>
         </div>

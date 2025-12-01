@@ -1,0 +1,155 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 35px;
+    width: 1920px;
+    height: 80px;
+    background: #FAF1F1;
+    order: 2;
+}
+.footerAuthorDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 35px;
+    margin: 0 auto;
+    width: 960px;
+    height: 80px;
+    background: #FAF1F1;
+    order: 0;
+}
+.footerAuthor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 550px;
+    height: 60px;
+    background: #FAF1F1;
+    border-radius: 20px;
+    order: 0;
+}
+.footerAuthorText{
+    width: 526px;
+    height: 44px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #2382FF;
+    order: 0;
+}
+.footerSocialNetworksDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+    width: 960px;
+    height: 80px;
+    background: #FAF1F1;
+    order: 1;
+}
+.footerSocialNetworksTextDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 550px;
+    height: 60px;
+    background: #FAF1F1;
+    border-radius: 20px;
+    order: 0;
+}
+.footerSocialNetworksText{
+    width: 420px;
+    height: 44px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #2382FF;
+    order: 0;
+}
+.footerSocialNetworksIconsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 40px;
+    width: 480px;
+    height: 60px;
+    background: #FAF1F1;
+    border-radius: 20px;
+    order: 1;
+}
+.footerTelegramIconDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 60px;
+    height: 60px;
+    background: #FAF1F1;
+    border-radius: 20px;
+    order: 0;
+}
+.telegramIcon{
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.footerInstagramIconDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 60px;
+    height: 60px;
+    background: #FAF1F1;
+    border-radius: 20px;
+    order: 1;
+}
+.instagramIcon{
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.footerTiktokIconDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 30px;
+    gap: 10px;
+    width: 60px;
+    height: 60px;
+    background: #FAF1F1;
+    border-radius: 20px;
+    order: 2;
+}
+.tiktokIcon{
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}

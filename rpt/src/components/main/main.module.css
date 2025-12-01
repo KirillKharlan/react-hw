@@ -1,0 +1,93 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 20px;
+    width: 1920px;
+    height: 920px;
+    background: #FAF1F1;
+    order: 1;
+}
+.technicalPartTexts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 20px;
+    width: 1920px;
+    height: 760px;
+    background: #FAF1F1;
+    order: 0;
+}
+.backendTextsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 20px;
+    width: 1920px;
+    height: 380px;
+    background: #FAF1F1;
+    order: 0;
+}
+.backendText{
+    width: 1800px;
+    height: 130px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    color: #000000;
+    order: 0;
+}
+.backendTextMain{
+    width: 1800px;
+    height: 230px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    order: 1;
+}
+.frontendTextsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 20px;
+    gap: 35px;
+    width: 1920px;
+    height: 380px;
+    background: #FAF1F1;
+    order: 1;
+}
+.frontendText{
+    
+}
+.descriptionPartText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px 20px;
+    gap: 35px;
+    width: 1920px;
+    height: 160px;
+    background: #FAF1F1;
+    order: 1;
+}
+.descriptionText{
+    width: 1802px;
+    height: 140px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;
+    order: 0;
+}
