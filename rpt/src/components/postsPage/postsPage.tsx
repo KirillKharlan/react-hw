@@ -11,7 +11,7 @@ export function PostsPage(props: IProps) {
     const posts  = props.posts;
     const tags = props.tags;
     return (
-        <div className={style.App}>
+        <div className={style.postsPage}>
             <div className={style.posts}>
             <div className={style.filter}>
                 <div className={style.filterLikesPart}>

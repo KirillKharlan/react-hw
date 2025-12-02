@@ -1,14 +1,14 @@
 import React from 'react';
-import likesimg from "./images/likesimg.svg"; 
+import likesimg from "../../images/likesimg.svg"; 
 import { IPropsPostCard} from './types'; 
-import style from "./static/styles/Posts.module.css";
+import style from "./postCard.module.css";
 
 
 export function PostCard(props: IPropsPostCard) { 
   const post = props.post;
   return (
     <div className={style.postCard}>
-      <div className={style.postHeaer}>
+      <div className={style.postHeader}>
         <h1 className={style.postHeaderText}>{post.title}</h1> 
       </div>
       <div className={style.postMain}>

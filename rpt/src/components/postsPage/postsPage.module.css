@@ -1,34 +1,37 @@
-.App{
+.postsPage{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0px;
+    flex-direction: row;
     position: relative;
-    max-width: 1920px;
+    width: 1920px;
     height: 1080px;
+    left: 0px;
+    top: 0px;
     background: #FAF1F1;
 }
 .posts{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 45px 157px;
     gap: 10px;
-    position: absolute;
+    position: relative;
     width: 1420px;
-    height: 1084px;
+    height: 1080px;
     left: 500px;
     top: 0px;
+    order: 1;
     background: #FAF1F1;
 }
 .filter{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 500px;
     height: 1080px;
     left: 0px;
     top: 0px;
+    order: 0;
     background: #FAF1F1;
 }
 .filterLikesPart{
@@ -42,6 +45,7 @@
     height: 610px;
     left: 0px;
     top: 0px;
+    order: 1;
     background: #FAF1F1;
 }
 .searchField{
@@ -58,7 +62,6 @@
     box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     order: 0;
-    align-self: stretch;
 }
 .searchFieldText{
     width: 227px;
@@ -84,7 +87,6 @@
     border: 1px solid #000000;
     border-radius: 15px;
     order: 1;
-    align-self: stretch;
 }
 .likesText{
     width: 470px;
@@ -308,6 +310,7 @@
     height: 470px;
     left: 0px;
     top: 610px;
+    order: 2;
     background: #FAF1F1;
 }
 .tagsPart{
