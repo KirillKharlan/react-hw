@@ -12,12 +12,12 @@ export function PostsPage(props: IProps) {
     const tags = props.tags;
     return (
         <div className={style.postsPage}>
-            <div className={style.posts}>
             <div className={style.filter}>
                 <div className={style.filterLikesPart}>
-                    <h1 className={style.searchFieldText}>Пошук постів</h1>
+                    <div className={style.searchField}>
+                        <h1 className={style.searchFieldText}>Пошук постів</h1>
                     </div>
-                    <div className={style.searchLikes}>
+                    <div className={style.searchLikes}> 
                         <h1 className={style.likesText}>Пошук постів по лайкам</h1>
                         <div className={style.likesFields}>
                             <div className={style.likesFieldOne}>
@@ -56,13 +56,15 @@ export function PostsPage(props: IProps) {
                                     <h1 className={style.tagText}>{tag.name}</h1>
                                 </div>
                             ))}
+                        </div>
                     </div>
                 </div>
             </div>
+            <div className={style.posts}>
+                { posts.map((post) => (
+                    <PostCard key={post.id} post={post} />
+                ))}
             </div>
-            { posts.map((post) => (
-                <PostCard key={post.id} post={post} />
-            ))}
         </div>
     );
 }

@@ -1,36 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 .postsPage{
     display: flex;
     flex-direction: row;
-    position: relative;
     width: 1920px;
     height: 1080px;
-    left: 0px;
-    top: 0px;
-    background: #FAF1F1;
-}
-.posts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 45px 157px;
-    gap: 10px;
-    position: relative;
-    width: 1420px;
-    height: 1080px;
-    left: 500px;
-    top: 0px;
-    order: 1;
     background: #FAF1F1;
 }
 .filter{
     display: flex;
     flex-direction: column;
-    position: relative;
+    gap: 30px;
     width: 500px;
     height: 1080px;
-    left: 0px;
-    top: 0px;
     order: 0;
     background: #FAF1F1;
 }
@@ -38,13 +23,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     gap: 30px;
-    position: absolute;
     width: 500px;
     height: 610px;
-    left: 0px;
-    top: 0px;
     order: 1;
     background: #FAF1F1;
 }
@@ -64,9 +47,10 @@
     order: 0;
 }
 .searchFieldText{
-    width: 227px;
+    width: auto;
     height: 40px;
     font-family: 'Quicksand';
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -89,7 +73,7 @@
     order: 1;
 }
 .likesText{
-    width: 470px;
+    width: 360px;
     height: 60px;
     font-family: 'Quicksand';
     font-style: normal;
@@ -141,7 +125,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     gap: 10px;
     width: 150px;
     height: 60px;
@@ -152,12 +137,13 @@
     order: 1;
 }
 .fieldOneText{
-    width: 109px;
+    width: 160px;
     height: 30px;
+    text-align: center;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #2382FF;
     order: 0;
@@ -188,7 +174,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     gap: 10px;
     width: 160px;
     height: 60px;
@@ -199,12 +186,13 @@
     order: 1;
 }
 .fieldTwoText{
-    width: 112px;
+    width: 160px;
     height: 30px;
+    text-align: center;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #2382FF;
     order: 0;
@@ -233,7 +221,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     gap: 10px;
     width: 160px;
     height: 60px;
@@ -244,12 +233,13 @@
     order: 1;
 }
 .fieldThreeText{
-    width: 126px;
+    width: 160px;
     height: 30px;
+    text-align: center;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #2382FF;
     flex: none;
@@ -279,7 +269,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     gap: 10px;
     width: 160px;
     height: 60px;
@@ -290,26 +281,25 @@
     order: 1;
 }
 .fieldFourText{
-    width: 136px;
+    width: 160px;
     height: 30px;
+    text-align: center;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 30px;
     color: #2382FF;
     order: 0;
+    flex-grow: 1;
 }
 .filterTagsPart{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px;
-    position: absolute;
-    width: 500px;
-    height: 470px;
-    left: 0px;
-    top: 610px;
+    padding-left: 30px;
+    width: 470px;
+    height: 500px;
     order: 2;
     background: #FAF1F1;
 }
@@ -319,7 +309,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
     width: 440px;
     height: 410px;
     background: #FAF1F1;
@@ -329,7 +318,7 @@
     align-self: stretch;
 }
 .tagsText{
-    width: 440px;
+    width: 350px;
     height: 60px;
     font-family: 'Quicksand';
     font-style: normal;
@@ -355,6 +344,17 @@
     height: 330px;
     background: #FAF1F1;
     order: 1;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1420px;
+    height: 1080px;
+    order: 1;
+    background: #FAF1F1;
+    flex-grow: 2;
+    overflow-y: auto;
 }
 .tagItem{}
 .tagItemText{}
