@@ -1,5 +1,6 @@
-import { MainPage } from "./components/mainPage/mainPage";
+import { PostPage } from "./components/postPage/postPage";
 
-export function App(){
-    return (<MainPage />)
+
+export function Posts(){
+    return (<PostPage />)
 }

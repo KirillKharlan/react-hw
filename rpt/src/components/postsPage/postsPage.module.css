@@ -348,7 +348,11 @@
 .posts{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
     width: 1420px;
     height: 1080px;
     order: 1;

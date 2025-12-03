@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 .postCard{
     box-sizing: border-box;
     display: flex;
@@ -7,7 +12,6 @@
     width: 1000px;
     height: 900px;
     background: #FAF1F1;
-    border: 1px solid #000000;
     border-radius: 25px;
     order: 0;
 }
@@ -27,16 +31,18 @@
     align-self: stretch;
 }
 .postHeaderText{
-    width: 929px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 270px;
     height: 44px;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     line-height: 44px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #000000;
     order: 0;
 }
@@ -60,6 +66,8 @@
     padding: 0px;
     width: 1000px;
     height: 500px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
     background: #FAF1F1;
     order: 0;
 }
@@ -67,6 +75,8 @@
     width: 1000px;
     height: 500px;
     flex: none;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
     order: 0;
     flex-grow: 0;
 }
@@ -86,6 +96,11 @@
     flex-grow: 0;
 }
 .postDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 1000px;
     height: 200px;
     font-family: 'Quicksand';
@@ -93,9 +108,6 @@
     font-weight: 700;
     font-size: 35px;
     line-height: 44px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #000000;
     flex: none;
     order: 0;
@@ -109,9 +121,12 @@
     align-items: center;
     padding: 0px;
     width: 1000px;
-    height: 100px;
+    height: 102px;
     background: #FAF1F1;
     border-radius: 0px 0px 25px 25px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     flex: none;
     order: 2;
     align-self: stretch;
@@ -124,9 +139,10 @@
     align-items: center;
     padding: 0px;
     gap: 10px;
-    width: 200px;
+    width: 198px;
     height: 100px;
     background: #FAF1F1;
+    border-radius: 0px 0px 0px 25px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -180,6 +196,7 @@
     width: 800px;
     height: 100px;
     background: #FAF1F1;
+    border-radius: 0px 0px 25px 0px;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -228,6 +245,7 @@
     width: 650px;
     height: 100px;
     background: #FAF1F1;
+    border-radius: 0px 0px 25px 0px;
     flex: none;
     order: 1;
     flex-grow: 0;

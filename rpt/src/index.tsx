@@ -1,9 +1,8 @@
 import { createRoot } from "react-dom/client";
-import { App } from "./App";
+import { Posts } from "./App";
+import { MainPage } from "./components/mainPage/mainPage";
 import { StrictMode } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { PostsPage } from "./components/postsPage/postsPage";
-import { IPost, ITag } from "./components/postCard/types";
 
 
 const rootDiv = document.getElementById('root') as HTMLElement;
@@ -11,11 +10,13 @@ const root = createRoot(rootDiv);
 root.render(
     <StrictMode>
         <BrowserRouter>
-            <PostsPage 
-                posts={[] as IPost[]}
-                tags={[] as ITag[]}
-            />
+            {/* <Posts /> */}
+            <MainPage />
         </BrowserRouter>
     </StrictMode>
 );
-// если нужен App вместо Posts, то заменить выше на <App />
+
+{/* <PostsPage 
+    posts={[] as IPost[]}
+    tags={[] as ITag[]}
+/> */}

@@ -1,7 +1,7 @@
 import style from "./footer.module.css";
-import instagram from "../mainPage/images/instagram.svg";
-import tiktok from "../mainPage/images/tiktok.svg";
-import telegram from "../mainPage/images/telegram.svg";
+import instagram from "../../images/instagram.svg";
+import tiktok from "../../images/tiktok.svg";
+import telegram from "../../images/telegram.svg";
 
 
 

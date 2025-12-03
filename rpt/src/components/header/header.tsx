@@ -1,12 +1,12 @@
 import style from "./header.module.css"
-import profile from "../mainPage/images/profile.svg";
+import profile from "../../images/profile.svg";
 
 
 export function Header() {
     return (
         <header className={style.header}>
             <button className={style.mainPageButton}>
-                <h1 className={style.MainButtonText}>Головна Сторінка</h1>
+                <h1 className={style.mainButtonText}>Головна Сторінка</h1>
             </button>
             <button className={style.allpostsPageButton}>
                 <h1 className={style.allpostsButtonText}>Усі пости</h1>

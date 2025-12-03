@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 .header{
     display: flex;
     flex-direction: row;
@@ -7,6 +12,7 @@
     gap: 10px;
     width: 1920px;
     height: 80px;
+    margin: 0 auto;
     background: #FAF1F1;
     border-bottom: 1px solid #BBB4B4;
 }
@@ -34,7 +40,7 @@
     line-height: 44px;
     color: #FFFFFF;
 }
-.allpostspageButton{
+.allpostsPageButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,7 +65,7 @@
     color: #FFFFFF;
     order: 0;
 }
-.createpostPageButton{
+.createpostButton{
     display: flex;
     flex-direction: row;
     justify-content: center;
