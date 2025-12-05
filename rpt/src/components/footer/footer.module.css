@@ -5,7 +5,7 @@
     align-items: center;
     padding: 0px;
     gap: 35px;
-    width: 1920px;
+    width: clamp(300px, 100%, 1920px);
     height: 80px;
     margin: 0 auto;
     background: #FAF1F1;
@@ -19,7 +19,7 @@
     padding: 0px;
     gap: 35px;
     margin: 0 auto;
-    width: 960px;
+    width: clamp(150px, 100%, 960px);
     height: 80px;
     background: #FAF1F1;
     order: 0;
@@ -29,22 +29,22 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding: 11px clamp(5px, 2vw, 30px);
     gap: 10px;
-    width: 550px;
+    width: clamp(90px, 100%, 550px);
     height: 60px;
     background: #FAF1F1;
     border-radius: 20px;
     order: 0;
 }
 .footerAuthorText{
-    width: 526px;
+    width: clamp(80px, 100%, 526px);
     height: 44px;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 44px;
+    font-size: clamp(14px, 2vw, 30px);
+    line-height: clamp(30px, 1vw, 44px);
     color: #2382FF;
     order: 0;
 }
@@ -55,7 +55,7 @@
     align-items: center;
     padding: 0px;
     margin: 0 auto;
-    width: 960px;
+    width: clamp(150px, 100%, 750px);
     height: 80px;
     background: #FAF1F1;
     order: 1;
@@ -65,22 +65,23 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
-    gap: 10px;
-    width: 550px;
+    column-gap: clamp(2px, 2vw, 10px);
+    padding-top: clamp(5px, 2vw, 30px);
+    padding-left: clamp(5px, 2vw, 30px);
+    width: clamp(120px, 100%, 550px);
     height: 60px;
     background: #FAF1F1;
     border-radius: 20px;
     order: 0;
 }
 .footerSocialNetworksText{
-    width: 420px;
-    height: 44px;
+    width: clamp(120px, 100%, 550px);
+    height: 60px;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
-    line-height: 44px;
+    font-size: clamp(10px, 2vw, 30px);
+    line-height: clamp(30px, 1vw, 44px);
     color: #2382FF;
     order: 0;
 }
@@ -89,10 +90,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding: 11px clamp(5px, 2vw, 30px);
     gap: 40px;
-    width: 480px;
-    height: 60px;
+    width: clamp(75px, 100%, 480px);
+    height: clamp(35px, 100%, 60px);
     background: #FAF1F1;
     border-radius: 20px;
     order: 1;
@@ -102,18 +103,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding: 11px clamp(5px, 2vw, 30px);
     gap: 10px;
-    width: 60px;
-    height: 60px;
+    width: clamp(35px, 100%, 60px);
+    height: clamp(35px, 100%, 60px);
     background: #FAF1F1;
     border-radius: 20px;
     order: 0;
 }
 .telegramIcon{
     border-radius: 20px;
-    width: 60px;
-    height: 60px;
+    width: clamp(35px, 100%, 60px);
+    height: clamp(35px, 100%, 60px);
     object-fit: cover;
 }
 .footerInstagramIconDiv{
@@ -121,18 +122,18 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding: 11px clamp(5px, 2vw, 30px);
     gap: 10px;
-    width: 60px;
-    height: 60px;
+    width: clamp(35px, 100%, 60px);
+    height: clamp(35px, 100%, 60px);
     background: #FAF1F1;
     border-radius: 20px;
     order: 1;
 }
 .instagramIcon{
     border-radius: 20px;
-    width: 60px;
-    height: 60px;
+    width: clamp(35px, 100%, 60px);
+    height: clamp(35px, 100%, 60px);
     object-fit: cover;
 }
 .footerTiktokIconDiv{
@@ -140,17 +141,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px 30px;
+    padding: 11px clamp(5px, 2vw, 30px);
     gap: 10px;
-    width: 60px;
-    height: 60px;
+    width: clamp(35px, 100%, 60px);
+    height: clamp(35px, 100%, 60px);
     background: #FAF1F1;
     border-radius: 20px;
     order: 2;
 }
 .tiktokIcon{
     border-radius: 20px;
-    width: 60px;
-    height: 60px;
+    width: clamp(35px, 100%, 60px);
+    height: clamp(35px, 100%, 60px);
     object-fit: cover;
 }

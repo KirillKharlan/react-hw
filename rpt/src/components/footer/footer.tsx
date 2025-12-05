@@ -14,20 +14,20 @@ export function Footer() {
         </div>
         </div>
         <div className={style.footerSocialNetworksDiv}>
-        <div className={style.footerSocialNetworksTextDiv}>
-            <h1 className={style.footerSocialNetworksText}>Наші соціальні мережі</h1>
-        </div>
-        <div className={style.footerSocialNetworksIconsDiv}>
-            <div className={style.footerTelegramIconDiv}>
-            <img className={style.telegramIcon} src={telegram} alt="" />
+            <div className={style.footerSocialNetworksTextDiv}>
+                <h1 className={style.footerSocialNetworksText}>Наші соцмережі</h1>
             </div>
-            <div className={style.footerInstagramIconDiv}>
-            <img className={style.instagramIcon} src={instagram} alt="" />
+            <div className={style.footerSocialNetworksIconsDiv}>
+                <div className={style.footerTelegramIconDiv}>
+                <img className={style.telegramIcon} src={telegram} alt="" />
+                </div>
+                <div className={style.footerInstagramIconDiv}>
+                <img className={style.instagramIcon} src={instagram} alt="" />
+                </div>
+                <div className={style.footerTiktokIconDiv}>
+                <img className={style.tiktokIcon} src={tiktok} alt="" />
+                </div>
             </div>
-            <div className={style.footerTiktokIconDiv}>
-            <img className={style.tiktokIcon} src={tiktok} alt="" />
-            </div>
-        </div>
         </div>
     </footer>
 );
