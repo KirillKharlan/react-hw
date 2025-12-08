@@ -1,102 +1,105 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 header{
     order: 0;
+    min-height: 3rem;
 }
 .main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: clamp(300px, 100%, 1920px);
-    height: 1080px;
-    padding: 15px 10px 20px;
+    width: clamp(18.75rem, 100%, 120rem);
+    min-height: 67.5rem;
+    padding: 0.9375rem 0.625rem 1.25rem;
     margin: 0 auto;
     background: #FAF1F1;
     order: 1;
 }
+
 .technicalPartTexts{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px 20px;
-    width: clamp(300px, 100%, 1920px);
-    height: 760px;
+    padding: 0.9375rem 0.625rem 1.25rem;
+    width: clamp(18.75rem, 100%, 120rem);
+    min-height: 47.5rem;
     background: #FAF1F1;
     order: 0;
 }
+
 .backendTextsDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px 20px;
-    width: clamp(300px, 100%, 1920px);
-    height: 380px;
+    padding: 0.9375rem 0.625rem 1.25rem;
+    width: clamp(18.75rem, 100%, 120rem);
+    min-height: 23.75rem;
     background: #FAF1F1;
     order: 0;
 }
 .backendText{
-    width: clamp(300px, 100%, 1800px);
-    height: clamp(40px, 100%, 130px);
+    width: clamp(18.75rem, 100%, 112.5rem);
+    height: clamp(2.5rem, auto, 8.125rem);
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(18px, 2vw, 35px);
-    line-height: clamp(30px, 1vw, 44px);
+    font-size: clamp(1.125rem, 2vw, 2.1875rem);
+    line-height: clamp(1.875rem, 1vw + 1rem, 2.75rem);
     color: #000000;
     order: 0;
 }
 .backendTextMain{
-    width: clamp(300px, 100%, 1800px);
-    height: clamp(90px, 100%, 230px);
+    width: clamp(18.75rem, 100%, 112.5rem);
+    height: clamp(5.625rem, auto, 14.375rem); 
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(10px, 2vw, 20px);
-    line-height: clamp(19px, 1vw, 25px);
+    font-size: clamp(0.625rem, 2vw, 1.25rem);
+    line-height: clamp(1.1875rem, 1vw + 0.5rem, 1.5625rem); 
     color: #000000;
     order: 1;
 }
+
 .frontendTextsDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px 20px;
-    gap: 35px;
-    width: clamp(300px, 100%, 1920px);
-    height: 380px;
+    padding: 0.9375rem 0.625rem 1.25rem;
+    gap: 2.1875rem;
+    min-height: 23.75rem; 
     background: #FAF1F1;
     order: 1;
 }
 .frontendText{
-    
 }
+
 .descriptionPartText{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px 20px;
-    gap: 35px;
-    width: clamp(300px, 100%, 1920px);
-    height: 160px;
+    padding: 0.9375rem 0.625rem 1.25rem;
+    gap: 2.1875rem; 
+    width: clamp(18.75rem, 100%, 120rem);
+    min-height: 10rem;
     background: #FAF1F1;
     order: 1;
 }
 .descriptionText{
-    width: clamp(300px, 100%, 1920px);
-    height: 140px;
+    width: clamp(18.75rem, 100%, 120rem);
+    height: auto; 
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: clamp(1.5rem, 2.5vw, 2rem); 
+    line-height: clamp(2rem, 1vw + 1rem, 2.5rem); 
     color: #000000;
     order: 0;
 }

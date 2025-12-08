@@ -3,155 +3,157 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    gap: 35px;
-    width: clamp(300px, 100%, 1920px);
-    height: 80px;
+    padding: 0;
+    gap: clamp(1rem, 2vw, 2.1875rem); 
+    width: 100%;
+    min-width: 18.75rem;
+    max-width: 120rem;
+    height: 5rem; 
     margin: 0 auto;
     background: #FAF1F1;
     order: 2;
 }
+
 .footerAuthorDiv{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 35px;
+    padding: 0;
+    gap: 2.1875rem; 
     margin: 0 auto;
-    width: clamp(150px, 100%, 960px);
-    height: 80px;
+    width: clamp(9.375rem, 45%, 60rem);
+    height: 5rem;
     background: #FAF1F1;
     order: 0;
 }
+
 .footerAuthor{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px clamp(5px, 2vw, 30px);
-    gap: 10px;
-    width: clamp(90px, 100%, 550px);
-    height: 60px;
+    padding: 0.6875rem clamp(0.3125rem, 2vw, 1.875rem);
+    gap: 0.625rem;
+    width: clamp(5.625rem, 80%, 34.375rem); 
+    height: 3.75rem;
     background: #FAF1F1;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     order: 0;
 }
 .footerAuthorText{
-    width: clamp(80px, 100%, 526px);
-    height: 44px;
+    width: 100%;
+    height: auto; 
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(14px, 2vw, 30px);
-    line-height: clamp(30px, 1vw, 44px);
+    font-size: clamp(0.875rem, 2vw, 1.875rem);
+    line-height: clamp(1.875rem, 1vw + 1rem, 2.75rem); 
     color: #2382FF;
     order: 0;
 }
+
 .footerSocialNetworksDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     margin: 0 auto;
-    width: clamp(150px, 100%, 750px);
-    height: 80px;
+    width: clamp(9.375rem, 50%, 46.875rem);
+    height: 5rem;
     background: #FAF1F1;
     order: 1;
 }
+
 .footerSocialNetworksTextDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: clamp(2px, 2vw, 10px);
-    padding-top: clamp(5px, 2vw, 30px);
-    padding-left: clamp(5px, 2vw, 30px);
-    width: clamp(120px, 100%, 550px);
-    height: 60px;
+    column-gap: clamp(0.125rem, 2vw, 0.625rem);
+    padding-left: clamp(0.3125rem, 2vw, 1.875rem);
+    width: clamp(7.5rem, 70%, 34.375rem);
+    height: 3.75rem;
     background: #FAF1F1;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     order: 0;
 }
 .footerSocialNetworksText{
-    width: clamp(120px, 100%, 550px);
-    height: 60px;
+    width: 100%;
+    height: auto; 
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(10px, 2vw, 30px);
-    line-height: clamp(30px, 1vw, 44px);
+    font-size: clamp(0.625rem, 2vw, 1.875rem);
+    line-height: clamp(1.875rem, 1vw + 1rem, 2.75rem);
     color: #2382FF;
     order: 0;
 }
+
 .footerSocialNetworksIconsDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px clamp(5px, 2vw, 30px);
-    gap: 40px;
-    width: clamp(75px, 100%, 480px);
-    height: clamp(35px, 100%, 60px);
+    padding: 0.6875rem clamp(0.3125rem, 2vw, 1.875rem);
+    gap: clamp(1rem, 2vw, 2.5rem);
+    width: clamp(4.6875rem, 30%, 30rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
     background: #FAF1F1;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     order: 1;
 }
-.footerTelegramIconDiv{
+
+.footerTelegramIconDiv {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 11px clamp(5px, 2vw, 30px);
-    gap: 10px;
-    width: clamp(35px, 100%, 60px);
-    height: clamp(35px, 100%, 60px);
+    padding: 0.6875rem clamp(0.3125rem, 2vw, 1.875rem);
+    gap: 0.625rem;
+    width: clamp(2.1875rem, 100%, 3.75rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
     background: #FAF1F1;
-    border-radius: 20px;
-    order: 0;
 }
-.telegramIcon{
-    border-radius: 20px;
-    width: clamp(35px, 100%, 60px);
-    height: clamp(35px, 100%, 60px);
+.footerInstagramIconDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6875rem clamp(0.3125rem, 2vw, 1.875rem);
+    gap: 0.625rem;
+    width: clamp(2.1875rem, 100%, 3.75rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
+    background: #FAF1F1;
+}
+.footerTiktokIconDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6875rem clamp(0.3125rem, 2vw, 1.875rem);
+    gap: 0.625rem;
+    width: clamp(2.1875rem, 100%, 3.75rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
+    background: #FAF1F1;
+}
+
+.telegramIcon {
+    border-radius: 1.25rem;
+    width: clamp(2.1875rem, 100%, 3.75rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
     object-fit: cover;
 }
-.footerInstagramIconDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 11px clamp(5px, 2vw, 30px);
-    gap: 10px;
-    width: clamp(35px, 100%, 60px);
-    height: clamp(35px, 100%, 60px);
-    background: #FAF1F1;
-    border-radius: 20px;
-    order: 1;
-}
-.instagramIcon{
-    border-radius: 20px;
-    width: clamp(35px, 100%, 60px);
-    height: clamp(35px, 100%, 60px);
+.instagramIcon {
+    border-radius: 1.25rem;
+    width: clamp(2.1875rem, 100%, 3.75rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
     object-fit: cover;
 }
-.footerTiktokIconDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 11px clamp(5px, 2vw, 30px);
-    gap: 10px;
-    width: clamp(35px, 100%, 60px);
-    height: clamp(35px, 100%, 60px);
-    background: #FAF1F1;
-    border-radius: 20px;
-    order: 2;
-}
-.tiktokIcon{
-    border-radius: 20px;
-    width: clamp(35px, 100%, 60px);
-    height: clamp(35px, 100%, 60px);
+.tiktokIcon {
+    border-radius: 1.25rem;
+    width: clamp(2.1875rem, 100%, 3.75rem);
+    height: clamp(2.1875rem, 100%, 3.75rem);
     object-fit: cover;
 }

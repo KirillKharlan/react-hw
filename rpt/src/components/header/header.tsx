@@ -1,13 +1,13 @@
 import style from "./header.module.css"
 import profile from "../../images/profile.svg";
-import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
+// import { useMediaQuery } from "react-responsive";
+// import { useState } from "react";
 
 
 export function Header() {
-	const isDesktop = useMediaQuery({ minWidth: 1025 });
-	const isTablet = useMediaQuery({ minWidth: 750, maxWidth: 1024 });
-    const isMobile = useMediaQuery({ minWidth: 300, maxWidth: 749 });
+	// const isDesktop = useMediaQuery({ minWidth: 1025 });
+	// const isTablet = useMediaQuery({ minWidth: 750, maxWidth: 1024 });
+    // const isMobile = useMediaQuery({ minWidth: 300, maxWidth: 749 });
 
 
     return (
