@@ -10,13 +10,8 @@ const root = createRoot(rootDiv);
 root.render(
     <StrictMode>
         <BrowserRouter>
-            {/* <Posts /> */}
-            <MainPage />
+            <Posts />
+            {/* <MainPage /> */}
         </BrowserRouter>
     </StrictMode>
 );
-
-{/* <PostsPage 
-    posts={[] as IPost[]}
-    tags={[] as ITag[]}
-/> */}

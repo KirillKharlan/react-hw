@@ -1,21 +1,27 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 .postsPage{
     display: flex;
     flex-direction: row;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    min-width: 20rem;
+    max-width: 120rem;
+    height: auto; 
     background: #FAF1F1;
+    margin: 0 auto;
 }
+
 .filter{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    width: 500px;
-    height: 1080px;
+    gap: 1.875rem;
+    width: clamp(18rem, 30vw, 31.25rem);
+    height: 100%;
+    max-height: 67.5rem;
     order: 0;
     background: #FAF1F1;
 }
@@ -23,283 +29,316 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    gap: 30px;
-    width: 500px;
-    height: 610px;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    gap: 1.875rem;
+    width: 100%;
+    height: auto;
+    min-height: auto;
     order: 1;
     background: #FAF1F1;
 }
+
 .searchField{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 11px 30px;
-    gap: 10px;
-    width: 440px;
-    height: 60px;
+    padding: 0.6875rem clamp(0.625rem, 2vw, 1.875rem);
+    gap: 0.625rem;
+    width: 90%;
+    height: 3.75rem;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border: 0.0625rem solid #000000;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
     order: 0;
 }
 .searchFieldText{
     width: auto;
-    height: 40px;
+    height: auto;
     font-family: 'Quicksand';
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: clamp(1.875rem, 1vw, 2.5rem);
     color: #2382FF;
     order: 0;
+    flex-grow: 1;
 }
+
 .searchLikes{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    width: 440px;
-    height: 470px;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    min-height: auto;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    border-radius: 15px;
+    border: 0.0625rem solid #000000;
+    border-radius: 0.9375rem;
     order: 1;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
+
 .likesText{
-    width: 360px;
-    height: 60px;
+    width: 80%;
+    min-height: 3.75rem;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: clamp(1.875rem, 1vw, 2.5rem);
     display: flex;
     align-items: center;
     text-align: center;
     color: #2382FF;
     order: 0;
 }
+
 .likesFields{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
-    padding: 0px;
-    gap: 20px;
-    width: 435px;
-    height: 275px;
+    padding: 0;
+    gap: 1.25rem;
+    width: 95%;
+    height: auto;
+    min-height: auto;
     background: #FAF1F1;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     order: 1;
 }
-.likesFieldOne{
+
+.likesFieldOne {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 10px;
-    width: 190px;
-    height: 100px;
+    padding: 0;
+    gap: 0.625rem;
+    width: clamp(8rem, 40%, 11.875rem);
+    min-height: 6.25rem; 
     background: #FAF1F1;
-    border-radius: 20px;
+    border-radius: 1.25rem;
+}
+.likesFieldTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0.625rem;
+    width: clamp(8rem, 40%, 11.875rem);
+    min-height: 6.25rem; 
+    background: #FAF1F1;
+    border-radius: 1.25rem;
+}
+.likesFieldThree {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0.625rem;
+    width: clamp(8rem, 40%, 11.875rem);
+    min-height: 6.25rem; 
+    background: #FAF1F1;
+    border-radius: 1.25rem;
+}
+.likesFieldFour {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0.625rem;
+    width: clamp(8rem, 40%, 11.875rem);
+    min-height: 6.25rem; 
+    background: #FAF1F1;
+    border-radius: 1.25rem;
+}
+
+.fieldOneImg {
+    width: clamp(1.5rem, 2vw, 2.1875rem);
+    height: clamp(1.5rem, 2vw, 2.1875rem);
     order: 0;
 }
-.fieldOneImg{
-    width: 35px;
-    height: 35px;
+
+.fieldTwoImg {
+    width: clamp(1.5rem, 2vw, 1.875rem);
+    height: clamp(1.5rem, 2vw, 1.875rem);
     order: 0;
 }
-.fieldOneTextDiv{
+.fieldThreeImg {
+    width: clamp(1.5rem, 2vw, 1.875rem);
+    height: clamp(1.5rem, 2vw, 1.875rem);
+    order: 0;
+}
+.fieldFourImg {
+    width: clamp(1.5rem, 2vw, 1.875rem);
+    height: clamp(1.5rem, 2vw, 1.875rem);
+    order: 0;
+}
+
+.fieldOneTextDiv {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    gap: 10px;
-    width: 150px;
-    height: 60px;
+    padding-top: 0.6875rem;
+    padding-bottom: 0.6875rem;
+    gap: 0.625rem;
+    width: 70%;
+    height: 3.75rem;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border: 0.0625rem solid #000000;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
     order: 1;
 }
-.fieldOneText{
-    width: 160px;
-    height: 30px;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #2382FF;
-    order: 0;
-}
-.likesFieldTwo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    width: 190px;
-    height: 100px;
-    background: #FAF1F1;
-    border-radius: 20px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-.fieldTwoImg{
-    width: 30px;
-    height: 30px;
-    order: 0;
-}
-.fieldTwoTextDiv{
+.fieldTwoTextDiv {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    gap: 10px;
-    width: 160px;
-    height: 60px;
+    padding-top: 0.6875rem;
+    padding-bottom: 0.6875rem;
+    gap: 0.625rem;
+    width: 70%;
+    height: 3.75rem;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border: 0.0625rem solid #000000;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
     order: 1;
 }
-.fieldTwoText{
-    width: 160px;
-    height: 30px;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #2382FF;
-    order: 0;
-}
-.likesFieldThree{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    width: 190px;
-    height: 100px;
-    background: #FAF1F1;
-    border-radius: 20px;
-    order: 2;
-}
-.fieldThreeImg{
-    width: 30px;
-    height: 30px;
-    order: 0;
-}
-.fieldThreeTextDiv{
+.fieldThreeTextDiv {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    gap: 10px;
-    width: 160px;
-    height: 60px;
+    padding-top: 0.6875rem;
+    padding-bottom: 0.6875rem;
+    gap: 0.625rem;
+    width: 70%;
+    height: 3.75rem;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border: 0.0625rem solid #000000;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
     order: 1;
 }
-.fieldThreeText{
-    width: 160px;
-    height: 30px;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #2382FF;
-    flex: none;
-    order: 0;
-}
-.likesFieldFour{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    width: 190px;
-    height: 100px;
-    background: #FAF1F1;
-    border-radius: 20px;
-    order: 3;
-}
-.fieldFourImg{
-    width: 30px;
-    height: 30px;
-    order: 0;
-}
-.fieldFourTextDiv{
+.fieldFourTextDiv {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    gap: 10px;
-    width: 160px;
-    height: 60px;
+    padding-top: 0.6875rem;
+    padding-bottom: 0.6875rem;
+    gap: 0.625rem;
+    width: 70%;
+    height: 3.75rem;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    box-shadow: 0px 38px 15px rgba(0, 0, 0, 0.01), 0px 22px 13px rgba(0, 0, 0, 0.05), 0px 10px 10px rgba(0, 0, 0, 0.09), 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border: 0.0625rem solid #000000;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
     order: 1;
 }
-.fieldFourText{
-    width: 160px;
-    height: 30px;
+
+.fieldOneText {
+    width: auto;
+    height: auto;
     text-align: center;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    line-height: clamp(1rem, 1.5vw, 1.875rem);
     color: #2382FF;
     order: 0;
-    flex-grow: 1;
+    max-width: 80%;
 }
+.fieldTwoText {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    line-height: clamp(1rem, 1.5vw, 1.875rem);
+    color: #2382FF;
+    order: 0;
+    max-width: 80%;
+}
+.fieldThreeText {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    line-height: clamp(1rem, 1.5vw, 1.875rem);
+    color: #2382FF;
+    order: 0;
+    max-width: 80%;
+}
+.fieldFourText {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    line-height: clamp(1rem, 1.5vw, 1.875rem);
+    color: #2382FF;
+    order: 0;
+    max-width: 80%;
+}
+
 .filterTagsPart{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 30px;
-    width: 470px;
-    height: 500px;
+    align-items: center;
+    padding-left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 31.25rem;
     order: 2;
     background: #FAF1F1;
 }
@@ -309,22 +348,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 440px;
-    height: 410px;
+    width: 90%;
+    height: auto;
+    min-height: 25.625rem;
     background: #FAF1F1;
-    border: 1px solid #000000;
-    border-radius: 25px;
+    border: 0.0625rem solid #000000;
+    border-radius: 1.5625rem;
     order: 0;
-    align-self: stretch;
+    align-self: center;
 }
 .tagsText{
-    width: 350px;
-    height: 60px;
+    width: 80%;
+    min-height: 3.75rem;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    line-height: clamp(1.875rem, 1vw, 2.5rem);
     display: flex;
     align-items: center;
     text-align: center;
@@ -338,26 +378,27 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 0px;
-    gap: 20px;
-    width: 400px;
-    height: 330px;
+    padding: 0;
+    gap: 1.25rem;
+    width: 90%;
+    min-height: 20.625rem;
     background: #FAF1F1;
     order: 1;
 }
+
 .posts{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    gap: 30px;
-    width: 1420px;
-    height: 1080px;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    gap: 1.875rem;
+    width: auto;
+    height: 100%;
     order: 1;
     background: #FAF1F1;
-    flex-grow: 2;
+    flex-grow: 1;
     overflow-y: auto;
 }
 .tagItem{}
