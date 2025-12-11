@@ -1,42 +1,11 @@
 import { PostsPage } from "../postsPage/postsPage"
 import style from "./postPage.module.css";
+import { posts } from '../searchfield/seacrhfield';
+import { useState } from "react";
+import { IPost } from "../postCard/types";
 
 
-const postsList = [
-    {
-        id: 0,
-        title: "First Post",
-        description: "Programming is awesome!",
-        image: "image.png",
-        userId: 1,
-        tags: [{
-            id: 0,
-            name: "#Programming"
-        },
-        {
-            id: 1,
-            name: "#Typescript"
-        }]
-    },
-    {
-        id: 1,
-        title: "Second Post",
-        description: "My second post",
-        image: "image.png",
-        userId: 1,
-        tags: [{
-            id: 0,
-            name: "#React"
-        },
-        {
-            id: 1,
-            name: "Typescript"
-        }]
-    },
-    
-]
-
-const tagsList = [
+export const tagsList = [
     {
         id: 0,
         name: "#Programming"
@@ -52,9 +21,13 @@ const tagsList = [
 ]
 
 export function PostPage() {
+
   return (
-    <div className = {style.postPage}>
-        <PostsPage posts = {postsList} tags = {tagsList}></PostsPage> 
+    <div className={style.postPage}>
+        <PostsPage 
+            posts={posts} 
+            tags={tagsList} 
+            setFilteredPosts={()=>{}} />
     </div>
   );
 }

@@ -22,7 +22,7 @@ export function PostCard(props: IPropsPostCard) {
       <div className={style.postFooter}>
         <div className={style.postFooterLikes}>
           <img className={style.postLikesImg} src={likesimg} alt="Лайки" />
-          <h1 className={style.postLikes}>15</h1> 
+          <h1 className={style.postLikes}>{post.likes}</h1> 
           <h1 className={style.postLikesText}>Likes</h1>
         </div>
         <div className={style.postFooterTags}>

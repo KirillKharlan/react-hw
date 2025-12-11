@@ -39,39 +39,6 @@
     background: #FAF1F1;
 }
 
-.searchField{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0.6875rem clamp(0.625rem, 2vw, 1.875rem);
-    gap: 0.625rem;
-    width: 90%;
-    height: 3.75rem;
-    background: #FAF1F1;
-    border: 0.0625rem solid #000000;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-    order: 0;
-}
-.searchFieldText{
-    width: auto;
-    height: auto;
-    font-family: 'Quicksand';
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: clamp(1.875rem, 1vw, 2.5rem);
-    color: #2382FF;
-    order: 0;
-    flex-grow: 1;
-}
-
 .searchLikes{
     box-sizing: border-box;
     display: flex;
@@ -87,6 +54,11 @@
     border-radius: 0.9375rem;
     order: 1;
     padding-bottom: 1rem;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     padding-top: 1rem;
 }
 
@@ -122,43 +94,7 @@
     order: 1;
 }
 
-.likesFieldOne {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 0.625rem;
-    width: clamp(8rem, 40%, 11.875rem);
-    min-height: 6.25rem; 
-    background: #FAF1F1;
-    border-radius: 1.25rem;
-}
-.likesFieldTwo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 0.625rem;
-    width: clamp(8rem, 40%, 11.875rem);
-    min-height: 6.25rem; 
-    background: #FAF1F1;
-    border-radius: 1.25rem;
-}
-.likesFieldThree {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 0.625rem;
-    width: clamp(8rem, 40%, 11.875rem);
-    min-height: 6.25rem; 
-    background: #FAF1F1;
-    border-radius: 1.25rem;
-}
-.likesFieldFour {
+.likesField {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -171,92 +107,13 @@
     border-radius: 1.25rem;
 }
 
-.fieldOneImg {
+.fieldImg {
     width: clamp(1.5rem, 2vw, 2.1875rem);
     height: clamp(1.5rem, 2vw, 2.1875rem);
     order: 0;
 }
 
-.fieldTwoImg {
-    width: clamp(1.5rem, 2vw, 1.875rem);
-    height: clamp(1.5rem, 2vw, 1.875rem);
-    order: 0;
-}
-.fieldThreeImg {
-    width: clamp(1.5rem, 2vw, 1.875rem);
-    height: clamp(1.5rem, 2vw, 1.875rem);
-    order: 0;
-}
-.fieldFourImg {
-    width: clamp(1.5rem, 2vw, 1.875rem);
-    height: clamp(1.5rem, 2vw, 1.875rem);
-    order: 0;
-}
-
-.fieldOneTextDiv {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.6875rem;
-    padding-bottom: 0.6875rem;
-    gap: 0.625rem;
-    width: 70%;
-    height: 3.75rem;
-    background: #FAF1F1;
-    border: 0.0625rem solid #000000;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-    order: 1;
-}
-.fieldTwoTextDiv {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.6875rem;
-    padding-bottom: 0.6875rem;
-    gap: 0.625rem;
-    width: 70%;
-    height: 3.75rem;
-    background: #FAF1F1;
-    border: 0.0625rem solid #000000;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-    order: 1;
-}
-.fieldThreeTextDiv {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.6875rem;
-    padding-bottom: 0.6875rem;
-    gap: 0.625rem;
-    width: 70%;
-    height: 3.75rem;
-    background: #FAF1F1;
-    border: 0.0625rem solid #000000;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-    order: 1;
-}
-.fieldFourTextDiv {
+.fieldTextDiv {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -278,7 +135,8 @@
     order: 1;
 }
 
-.fieldOneText {
+
+.fieldText {
     width: auto;
     height: auto;
     text-align: center;
@@ -291,45 +149,7 @@
     order: 0;
     max-width: 80%;
 }
-.fieldTwoText {
-    width: auto;
-    height: auto;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
-    line-height: clamp(1rem, 1.5vw, 1.875rem);
-    color: #2382FF;
-    order: 0;
-    max-width: 80%;
-}
-.fieldThreeText {
-    width: auto;
-    height: auto;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
-    line-height: clamp(1rem, 1.5vw, 1.875rem);
-    color: #2382FF;
-    order: 0;
-    max-width: 80%;
-}
-.fieldFourText {
-    width: auto;
-    height: auto;
-    text-align: center;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
-    line-height: clamp(1rem, 1.5vw, 1.875rem);
-    color: #2382FF;
-    order: 0;
-    max-width: 80%;
-}
+
 
 .filterTagsPart{
     display: flex;
@@ -355,6 +175,11 @@
     border: 0.0625rem solid #000000;
     border-radius: 1.5625rem;
     order: 0;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     align-self: center;
 }
 .tagsText{
