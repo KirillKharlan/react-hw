@@ -28,7 +28,7 @@ export const posts = [
         description: "My second post",
         image: "image.png",
         userId: 1,
-        likes: 5,
+        likes: 56,
         tags: [{
             id: 0,
             name: "#React"
@@ -38,6 +38,22 @@ export const posts = [
             name: "Typescript"
         }]
     },
+    {
+        id: 2,
+        title: "Third Post",
+        description: "Hello world!",
+        image: "image.png",
+        userId: 2,
+        likes: 3,
+        tags: [{
+            id: 0,
+            name: "#Programming"
+        },
+        {
+            id: 1,
+            name: "#React"
+        }]
+    }
     
 ]
 
@@ -47,12 +63,18 @@ export function InputSearch(props: IProps){
     const { setFilteredPosts } = props
     const [ inputData, setInputData ] = useState<string>("")
     useEffect(() => {
-        setFilteredPosts(
-            posts.filter((post) => {
-                return post.title.toLowerCase().includes(inputData.toLowerCase()) ||
-                       post.description.toLowerCase().includes(inputData.toLowerCase())
-            })
-        )
+        if (inputData === "") {
+            setFilteredPosts(posts)
+            return
+        } else {
+            setFilteredPosts(
+                posts.filter((post) => {
+                    return post.title.toLowerCase().includes(inputData.toLowerCase()) || 
+                        post.description.toLowerCase().includes(inputData.toLowerCase())
+                })
+            )
+        }
+        
     }, [inputData])
     
     return  <div className = {style.sfContainer}>

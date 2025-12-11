@@ -14,11 +14,16 @@ export function PostsPage(props: IProps) {
 
     
     useEffect(() => {
-        setFilteredPosts(
-            posts.filter((post) => {
-                return post.likes > inputLikes
-            })
-        )
+        if (inputLikes === -1) {
+            setFilteredPosts(props.posts)
+            return
+        } else {
+            setFilteredPosts(
+                props.posts.filter((post) => {
+                    return post.likes > inputLikes
+                })
+            )
+        }
     }, [inputLikes])
 
     return (
