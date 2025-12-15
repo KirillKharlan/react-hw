@@ -1,15 +1,8 @@
 import style from "./header.module.css"
-import profile from "../../images/profile.svg";
-// import { useMediaQuery } from "react-responsive";
-// import { useState } from "react";
+import { ICONS } from "../../shared";
 
-
+const Profile = ICONS.profile;
 export function Header() {
-	// const isDesktop = useMediaQuery({ minWidth: 1025 });
-	// const isTablet = useMediaQuery({ minWidth: 750, maxWidth: 1024 });
-    // const isMobile = useMediaQuery({ minWidth: 300, maxWidth: 749 });
-
-
     return (
         <header className={style.header}>
             <button className={style.mainPageButton}>
@@ -26,7 +19,7 @@ export function Header() {
                     <h1 className={style.languageButtonText}>Мова</h1>
                 </button>
                 <button className={style.profileButton}>
-                    <img className={style.profileImage} src={profile} alt="" />
+                    <Profile className={style.profileImage} />
                 </button>
             </div>
         </header>

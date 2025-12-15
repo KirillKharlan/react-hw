@@ -1,5 +1,6 @@
-import { IPost } from "../postCard/types"
+import { IPost } from "../../app/postCard/types"
 
 export interface IProps {
+    filteredPosts: IPost[];
     setFilteredPosts: (posts: IPost[]) => void;
 }

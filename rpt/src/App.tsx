@@ -1,6 +1,6 @@
-import { PostPage } from "./components/postPage/postPage";
+import { PostsPage } from "./pages/posts-page/posts-page";
 
 
 export function Posts(){
-    return (<PostPage />)
+    return (<PostsPage />)
 }

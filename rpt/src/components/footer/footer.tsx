@@ -1,10 +1,10 @@
 import style from "./footer.module.css";
-import instagram from "../../images/instagram.svg";
-import tiktok from "../../images/tiktok.svg";
-import telegram from "../../images/telegram.svg";
+import { ICONS } from "../../shared";
 
 
-
+const Telegram = ICONS.telegram;
+const Instagram = ICONS.instagram;
+const Tiktok = ICONS.tiktok;
 export function Footer() {
   return (
     <footer className={style.footer}>
@@ -19,13 +19,13 @@ export function Footer() {
             </div>
             <div className={style.footerSocialNetworksIconsDiv}>
                 <div className={style.footerTelegramIconDiv}>
-                <img className={style.telegramIcon} src={telegram} alt="" />
+                <Telegram className={style.telegramIcon} />
                 </div>
                 <div className={style.footerInstagramIconDiv}>
-                <img className={style.instagramIcon} src={instagram} alt="" />
+                <Instagram className={style.instagramIcon} />
                 </div>
                 <div className={style.footerTiktokIconDiv}>
-                <img className={style.tiktokIcon} src={tiktok} alt="" />
+                <Tiktok className={style.tiktokIcon} />
                 </div>
             </div>
         </div>

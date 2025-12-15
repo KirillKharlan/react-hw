@@ -3,14 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
-.postPage{
+
+.postsPage{
     display: flex;
     flex-direction: row;
     width: 100%;
     min-width: 20rem;
     max-width: 120rem;
-    height: 67.5rem; 
+    height: auto; 
     background: #FAF1F1;
     margin: 0 auto;
-
 }

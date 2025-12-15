@@ -1,35 +1,34 @@
-import style from "./postsPage.module.css";
-import { useEffect, useState } from "react"
-import { IProps } from "./types"; 
-import { PostCard } from '../postCard/postCard';
-import { posts, InputSearch } from '../searchfield/seacrhfield';
+import style from "./filter.module.css"
+import { InputSearch } from "../searchfield/seacrhfield"
+import { posts } from "../searchfield/seacrhfield"
+import { useState } from "react"
+import { IProps } from "./types"
+import { useEffect } from "react"
 
-
-
-
-
-export function PostsPage(props: IProps) {
-    const { tags, setFilteredPosts } = props
+export function Filter(props: IProps) {
+    const { tags, setFilteredPosts, filteredPosts } = props
     const [ inputLikes, setInputLikes ] = useState<number>(-1)
+    const [ inputTags, setInputTags ] = useState<string>("")
 
-    
-    useEffect(() => {
-        if (inputLikes === -1) {
-            setFilteredPosts(props.posts)
-            return
-        } else {
-            setFilteredPosts(
-                props.posts.filter((post) => {
-                    return post.likes > inputLikes
-                })
-            )
-        }
-    }, [inputLikes])
+        useEffect(()=>{ 
+            setFilteredPosts(posts.filter((post)=>{
+                return post.likes > inputLikes })) 
+                }, [inputLikes]) 
+        useEffect(() => { 
+            if (inputTags){
+                setFilteredPosts( posts.filter((post) => 
+                    post.tags.some((tag) => tag.name === inputTags)
+            ))  
+            }
+        }, [inputTags])
 
     return (
-        <div className={style.postsPage}>
+        <div>
             <div className={style.filter}>
-                <InputSearch setFilteredPosts={setFilteredPosts} />
+                <InputSearch 
+                    filteredPosts={filteredPosts} 
+                    setFilteredPosts={setFilteredPosts} 
+                />
                 <div className={style.filterLikesPart}>
                     <div className={style.searchLikes}> 
                         <h1 className={style.likesText}>Пошук постів по лайкам</h1>
@@ -85,20 +84,22 @@ export function PostsPage(props: IProps) {
                     <div className={style.tagsPart}>
                         <h1 className={style.tagsText}>Пошук постів за тегами</h1>
                         <div className={style.tags}>
-                            { tags.map((tag) => {
-                                return <div key = {tag.id} className={style.containerButton}>
-                                        <input className={style.inputButton}type="checkbox" name = "tag" id = {"tag" + tag.id}/>
-                                        <label className={style.filterLabel} htmlFor={"tag" + tag.id}>{tag.name}</label>
-                                    </div>
-                            })}
+                            {tags.map((tag)=>(
+                                <div key={tag.id} className={style.tagField}>
+                                    <input className={style.inputButton}type="radio"
+                                        value= {tag.name}
+                                        name="tagsFilter" 
+                                        id={tag.name}
+                                        onChange={(event)=>{
+                                            const input = event.target.value
+                                            setInputTags(input)
+                                    }} />
+                                    <label className={style.filterLabel} htmlFor={tag.name}>{tag.name}</label>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className={style.posts}>
-                {props.posts.map((post) => (
-                    <PostCard key={post.id} post={post} />
-                ))}
             </div>
         </div>
     );

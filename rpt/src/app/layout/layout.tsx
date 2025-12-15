@@ -1,32 +1,11 @@
 import style from "./layout.module.css"
-import { PostCard } from "../postCard/postCard"
 import { Header } from "../header/header"
-import { useState } from "react"
-import { IPost } from "../postCard/types"
-import { PostPage } from "../postPage/postPage"
-import { Outlet } from "react-router-dom"
-import { PostsPage } from "../postsPage/postsPage"
+import { PostsList } from "../postsList/postsList"
 
 
-export const tagsList = [
-    {
-        id: 0,
-        name: "#Programming"
-    },
-    {
-        id: 1,
-        name: "#Typescript"
-    },
-    {
-        id: 2,
-        name: "#React"
-    }
-]
 
 
-export function Layout() {
-
-    const [ filteredPosts, setFilteredPosts ] = useState<IPost[]>([
+export const posts = [
     {
         id: 0,
         title: "First Post",
@@ -75,15 +54,13 @@ export function Layout() {
             name: "#React"
         }]
     }
-    ])
-    
+    ]
+export function Layout() {
     return (
         <div className={style.layout}>
             <Header />
             <main className={style.layoutContent}>
-
-                <Outlet context = {{ setFilteredPosts, tagsList}}/>
-                <PostPage />
+                <PostsList posts={posts} />
             </main>
         </div>
     );

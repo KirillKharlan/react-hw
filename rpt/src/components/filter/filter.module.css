@@ -1,20 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.postsPage{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    min-width: 20rem;
-    max-width: 120rem;
-    height: auto; 
-    background: #FAF1F1;
-    margin: 0 auto;
-}
-
 .filter{
     display: flex;
     flex-direction: column;
@@ -226,5 +209,3 @@
     flex-grow: 1;
     overflow-y: auto;
 }
-.tagItem{}
-.tagItemText{}

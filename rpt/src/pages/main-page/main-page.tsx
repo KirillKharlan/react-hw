@@ -1,6 +1,6 @@
-import style from "./mainPage.module.css";
-import { Header } from "../header/header"
-import { Footer } from "../footer/footer";
+import style from "./main-page.module.css";
+import { Header } from "../../app/header/header"
+import { Footer } from "../../components/footer/footer";
 
 export function MainPage() {
     return (

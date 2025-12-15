@@ -1,9 +1,10 @@
 import React from 'react';
-import likesimg from "../../images/likesimg.svg"; 
+import { ICONS } from "../../shared";
 import { IPropsPostCard} from './types'; 
 import style from "./postCard.module.css";
 
 
+const Likesimg = ICONS.likesimg;
 export function PostCard(props: IPropsPostCard) { 
   const post = props.post;
   return (
@@ -21,7 +22,7 @@ export function PostCard(props: IPropsPostCard) {
       </div>
       <div className={style.postFooter}>
         <div className={style.postFooterLikes}>
-          <img className={style.postLikesImg} src={likesimg} alt="Лайки" />
+          <Likesimg className={style.postLikesImg} />
           <h1 className={style.postLikes}>{post.likes}</h1> 
           <h1 className={style.postLikesText}>Likes</h1>
         </div>
