@@ -1,6 +1,6 @@
 import style from "./filter.module.css"
-import { InputSearch } from "../searchfield/seacrhfield"
-import { posts } from "../searchfield/seacrhfield"
+import { InputSearch } from "../searchfield/searchfield"
+import { posts } from "../searchfield/searchfield"
 import { useState } from "react"
 import { IProps } from "./types"
 import { useEffect } from "react"

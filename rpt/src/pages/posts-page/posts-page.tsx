@@ -1,5 +1,5 @@
 import style from "./posts-page.module.css";
-import { posts } from '../../components/searchfield/seacrhfield';
+import { posts } from '../../components/searchfield/searchfield';
 import { useState } from "react";
 import { IPost } from "../../app/postCard/types";
 import { Filter } from "../../components/filter/filter";
