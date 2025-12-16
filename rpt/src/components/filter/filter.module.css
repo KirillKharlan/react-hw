@@ -8,6 +8,7 @@
     order: 0;
     background: #FAF1F1;
 }
+
 .filterLikesPart{
     display: flex;
     flex-direction: column;

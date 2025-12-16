@@ -10,6 +10,17 @@
     width: 100%;
     min-width: 20rem;
     max-width: 120rem;
+    height: 67.5rem; 
+    background: #FAF1F1;
+    margin: 0 auto;
+}
+
+.postsPageContent{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 20rem;
+    max-width: 120rem;
     height: auto; 
     background: #FAF1F1;
     margin: 0 auto;

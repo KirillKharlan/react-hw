@@ -124,16 +124,18 @@ export function InputSearch(props: IProps){
     }
     }, [inputValue])
     return(
-        <div className={style.searchField}>
-            <input
-                className={style.inputSearch}
-                type="text"
-                placeholder="Пошук постів..."
-                value={inputValue}
-                onChange={(event)=>{
-                    const input = event.target.value;
-                    setInputValue(input)
-            }}/>
+        <div className={style.sfContainer}>
+            <div className={style.searchField}>
+                <input
+                    className={style.inputSearch}
+                    type="text"
+                    placeholder="Пошук постів..."
+                    value={inputValue}
+                    onChange={(event)=>{
+                        const input = event.target.value;
+                        setInputValue(input)
+                }}/>
+            </div>
         </div>
     )
 }

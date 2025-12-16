@@ -30,12 +30,14 @@ export function PostsPage() {
 
     return (
         <div className={style.postPage}>
-            <Filter 
-                tags={tagsList} 
-                setFilteredPosts={setFilteredPostsWrapper} 
-                filteredPosts={filteredPosts}
-            />
-            <PostsList posts={filteredPosts} />
+            <div className={style.postsPageContent}>
+                <Filter 
+                    tags={tagsList} 
+                    setFilteredPosts={setFilteredPostsWrapper} 
+                    filteredPosts={filteredPosts}
+                />
+                <PostsList posts={filteredPosts} />
+            </div>
         </div>
     );
 }
