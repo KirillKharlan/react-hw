@@ -1,6 +1,5 @@
-import { IPost } from "../../app/postCard/types"
 
-export interface IProps {
-    filteredPosts: IPost[];
-    setFilteredPosts: (posts: IPost[]) => void;
+export interface IInputSearchProps {
+    inputValue: string;
+    setInputValue: (value: string) => void;
 }
