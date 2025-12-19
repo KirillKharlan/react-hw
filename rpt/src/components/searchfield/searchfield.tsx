@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { IInputSearchProps } from "./types";
 import style from "./searchfield.module.css"
 

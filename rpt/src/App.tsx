@@ -1,6 +1,6 @@
-import { PostsPage } from "./pages/posts-page/posts-page";
+import { AppRouter } from "./app-router"
 
 
-export function Posts(){
-    return (<PostsPage />)
+export function App(){
+    return (<AppRouter />)
 }

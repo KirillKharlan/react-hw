@@ -1,28 +1,29 @@
 import style from "./filter.module.css"
 import { InputSearch } from "../searchfield/searchfield"
-import { posts } from "../searchfield/searchfield"
+import { IPost, ITag,  } from "../../shared/types"
 import { useState, useEffect } from "react"
 import { IFilteredProps } from "./types"
 
 export function Filter(props: IFilteredProps) {
-    const { tags, setFilteredPosts } = props
+    const { tags, allPosts, setFilteredPosts } = props;
     const [inputLikes, setInputLikes] = useState<number>(-1);
     const [inputTags, setInputTags] = useState<string>("");
     const [searchQuery, setSearchQuery] = useState<string>("");
-    
+
+
     useEffect(() => {
-        const result = posts.filter((post) => {
-            const matchesSearch = post.title
+        const result = allPosts.filter((post) => {
+            const matchesSearch = post.name
                 .toLowerCase()
                 .includes(searchQuery.toLowerCase());
             const matchesLikes = post.likes > inputLikes;
             const matchesTags = inputTags 
-                ? post.tags.some((tag) => tag.name === inputTags) 
+                ? post.tags.some((tag) => tag.tagName === inputTags) 
                 : true;
             return matchesSearch && matchesLikes && matchesTags;
         });
         setFilteredPosts(result);
-    }, [searchQuery, inputLikes, inputTags, setFilteredPosts]);
+    }, [searchQuery, inputLikes, inputTags, allPosts, setFilteredPosts]);
 
     return (
         <div className={style.filter}>
@@ -93,10 +94,10 @@ export function Filter(props: IFilteredProps) {
                                 <input className={style.inputButton} type="radio"
                                     value={tag.name}
                                     name="tagsFilter" 
-                                    id={tag.name}
+                                    id={`tag-${tag.id}`}
                                     onChange={(event) => setInputTags(event.target.value)} 
                                 />
-                                <label className={style.filterLabel} htmlFor={tag.name}>{tag.name}</label>
+                                <label className={style.filterLabel} htmlFor={`tag-${tag.id}`}>{tag.name}</label>
                             </div>
                         ))}
                     </div>

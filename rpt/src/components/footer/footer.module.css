@@ -141,19 +141,19 @@
 
 .telegramIcon {
     border-radius: 1.25rem;
-    width: clamp(2.1875rem, 100%, 3.75rem);
-    height: clamp(2.1875rem, 100%, 3.75rem);
-    object-fit: cover;
+    width: clamp(2.1875rem,10vw, 3.75rem);
+    height: clamp(2.1875rem, 10vw, 3.75rem);
+    object-fit: contain;
 }
 .instagramIcon {
     border-radius: 1.25rem;
-    width: clamp(2.1875rem, 100%, 3.75rem);
-    height: clamp(2.1875rem, 100%, 3.75rem);
-    object-fit: cover;
+    width: clamp(2.1875rem, 5vw, 3.75rem);
+    height: clamp(2.1875rem, 5vw, 3.75rem);
+    object-fit: contain;
 }
 .tiktokIcon {
     border-radius: 1.25rem;
-    width: clamp(2.1875rem, 100%, 3.75rem);
-    height: clamp(2.1875rem, 100%, 3.75rem);
-    object-fit: cover;
+    width: clamp(2.1875rem, 5vw, 3.75rem);
+    height: clamp(2.1875rem, 5vw, 3.75rem);
+    object-fit: contain;
 }

@@ -10,14 +10,14 @@ export function PostCard(props: IPropsPostCard) {
   return (
     <div className={style.postCard}>
       <div className={style.postHeader}>
-        <h1 className={style.postHeaderText}>{post.title}</h1> 
+        <h1 className={style.postHeaderText}>{post.name}</h1> 
       </div>
       <div className={style.postMain}>
         <div className={style.postImageDiv}>
-          <img className={style.postImage} src={post.image} alt="" />
+          <img className={style.postImage} src={post.img} alt="" />
         </div>
         <div className={style.postDescriptionDiv}>
-          <h1 className={style.postDescription}>{post.description}</h1>
+          <h1 className={style.postDescription}>{post.postDescription}</h1>
         </div>
       </div>
       <div className={style.postFooter}>
@@ -32,8 +32,8 @@ export function PostCard(props: IPropsPostCard) {
           </div>
           <div className={style.postTagsList}>
             {post.tags.map((tag) => (
-              <div key={tag.id} className={style.postTagItem}>
-                <h1 className={style.postTagText}>{tag.name}</h1>
+              <div key={tag.postId} className={style.postTagItem}>
+                <h1 className={style.postTagText}>{tag.tagName}</h1>
               </div>
             ))}
           </div>

@@ -1,3 +1,4 @@
+
 export interface ITag {
     id: number;
     name: string;
@@ -17,6 +18,7 @@ export interface IPost {
     }[];
 }
 
-export interface IPropsPostCard {
-    post: IPost
+export interface IFilteredProps {
+    tags: ITag[];
+    setFilteredPosts: (posts: IPost[]) => void;
 }
