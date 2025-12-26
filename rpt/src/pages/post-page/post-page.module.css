@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.postCard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 95%;
+    max-width: 1100px;
+    min-width: 18.75rem;
+    height: auto;
+    background: #FAF1F1;
+    border-radius: 1.5625rem;
+    margin: 2rem auto;
+}
+
+.postHeader {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    min-height: 6.25rem;
+    background: #FAF1F1;
+    border: 0.0625rem solid #000000;
+    border-radius: 1.5625rem 1.5625rem 0 0;
+    border-bottom: none;
+}
+
+.postHeaderText {
+    text-align: center;
+    width: clamp(10rem, 70%, 40rem);
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 3vw, 2.1875rem);
+    line-height: 1.2;
+    color: #000000;
+    padding: 0.5rem;
+}
+
+.editBtn {
+    position: absolute;
+    right: 20px;
+    background: #007AFF;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.editBtn:hover {
+    background: #0056b3;
+}
+
+.postMain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #FAF1F1;
+    border-left: 0.0625rem solid #000000;
+    border-right: 0.0625rem solid #000000;
+}
+
+.postImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background: #fff;
+    border-bottom: 0.0625rem solid #000000;
+}
+
+.postImage {
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.postDescriptionDiv {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    min-height: 8rem;
+    border-bottom: 0.0625rem solid #000000;
+}
+
+.postDescription {
+    text-align: center;
+    width: 100%;
+    font-family: 'Quicksand';
+    font-size: clamp(1.125rem, 2vw, 1.75rem);
+    line-height: 1.4;
+    color: #000000;
+}
+
+.postFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    min-height: 5rem;
+    background: #FAF1F1;
+    border-left: 0.0625rem solid #000000;
+    border-right: 0.0625rem solid #000000;
+    border-bottom: 0.0625rem solid #000000;
+}
+
+.postFooterLikes {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.postLikesImg {
+    width: 24px;
+    height: 24px;
+}
+
+.postLikes, .postLikesText {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.postFooterTags {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tagsLabel {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.tagItem {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.commentsSection {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+    background: #FAF1F1;
+    border: 0.0625rem solid #000000;
+    border-top: none;
+    border-radius: 0 0 1.5625rem 1.5625rem;
+}
+
+.commentForm {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+
+.editorContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 8px 20px;
+}
+
+.fontIcon {
+    font-family: 'serif';
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    user-select: none;
+}
+
+.quillWrapper {
+    flex: 1;
+    overflow: hidden;
+}
+
+:global(.ql-container.ql-snow) {
+    border: none !important;
+    font-family: 'Quicksand', sans-serif !important;
+    font-size: 1rem;
+}
+
+:global(.ql-editor) {
+    padding: 8px 0 !important;
+    min-height: 40px;
+}
+
+:global(.ql-toolbar.ql-snow) {
+    border: none !important;
+    border-bottom: 1px solid #eee !important;
+    padding: 0 0 5px 0 !important;
+}
+
+.submitBtn {
+    background: #007AFF;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.submitBtn:disabled {
+    opacity: 0.5;
+}
+
+.commentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.commentItem {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.commentAuthor {
+    font-family: 'Quicksand';
+    font-weight: 700;
+    color: #000;
+}
+
+.commentBody {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+}
+
+.commentBody blockquote {
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    color: #666;
+    font-style: italic;
+}
+
+.commentBody ul, .commentBody ol {
+    padding-left: 25px;
+}
+
+.deleteCommentBtn {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.headerEditPosition {
+    position: absolute;
+    right: 20px;
+}

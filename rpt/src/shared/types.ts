@@ -19,6 +19,7 @@ export interface IPost {
 }
 
 export interface IFilteredProps {
-    tags: ITag[];
+    tags: { id: number; name: string }[];
+    allPosts: IPost[];
     setFilteredPosts: (posts: IPost[]) => void;
 }

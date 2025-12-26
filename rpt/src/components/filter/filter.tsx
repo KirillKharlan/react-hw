@@ -1,8 +1,8 @@
 import style from "./filter.module.css"
 import { InputSearch } from "../searchfield/searchfield"
-import { IPost, ITag,  } from "../../shared/types"
+import { IPost, ITag, IFilteredProps } from "../../shared/types"
 import { useState, useEffect } from "react"
-import { IFilteredProps } from "./types"
+
 
 export function Filter(props: IFilteredProps) {
     const { tags, allPosts, setFilteredPosts } = props;
