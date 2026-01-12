@@ -1,0 +1,117 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 10px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.title {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-align: center;
+    font-family: inherit;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+    font-family: inherit;
+}
+
+/* Спільні стилі для ВСІХ полів */
+.input, 
+.textarea {
+    width: 100%;
+    /* Додаємо однаковий відступ зліва (15px) для всіх полів */
+    padding: 12px 15px; 
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit; 
+    background-color: #f5f7f9; 
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input:focus, 
+.textarea:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+/* --- СПЕЦИФІЧНІ НАЛАШТУВАННЯ РОЗМІРІВ --- */
+
+/* Поле опису (textarea) */
+.textarea {
+    min-height: 45px; 
+    height: 45px;
+    resize: none;
+    line-height: 1.2;
+}
+
+/* Поле картинки (URL) */
+input[type="url"].input {
+    min-height: 140px; 
+    /* Текст зліва зверху: padding-bottom виштовхує текст вгору */
+    padding: 12px 15px 110px 15px; 
+    line-height: 1.2;
+}
+
+/* -------------------------------------- */
+
+.errorMessage {
+    background-color: #fff5f5;
+    color: #e03131;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ffc9c9;
+    font-size: 14px;
+    font-family: inherit;
+    text-align: center;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.submitBtn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: inherit;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.submitBtn:disabled {
+    background-color: #cfd4da;
+    cursor: not-allowed;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #adb5bd;
+    font-family: inherit;
+}
