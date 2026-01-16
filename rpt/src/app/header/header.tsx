@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState} from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./header.module.css";
 import { ICONS } from "../../shared";
@@ -7,15 +7,12 @@ import { CreatePostForm } from "../../components/createpostform/createpostfrom";
 
 
 
+
 const Profile = ICONS.profile;
 
 export function Header() {
     const navigate = useNavigate();
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-    const buttonContainerRef = useRef<HTMLDivElement>(null);
-
-    const openModal = () => setIsModalOpen(true);
-    const closeModal = () => setIsModalOpen(false);
 
     return (
         <header className={style.header}>
@@ -26,20 +23,10 @@ export function Header() {
             <button className={style.allpostsPageButton} onClick={() => navigate("/posts")}>
                 <h1 className={style.allpostsButtonText}>Усі пости</h1>
             </button>
-            <div className={style.createPostWrapper} ref={buttonContainerRef}>
-                <button className={style.createpostButton} onClick={openModal}>
-                    <h1 className={style.createpostButtonText}>Створити пост</h1>
-                </button>
-
-                <Modal 
-                    isOpen={isModalOpen} 
-                    onClose={closeModal} 
-                    doCloseOnOutsideClick={true}
-                    container={buttonContainerRef.current || document.body}
-                >
-                    <CreatePostForm onSuccess={closeModal} />
-                </Modal>
-            </div>
+            
+            <button className={style.createpostButton} onClick={() => setIsModalOpen(true)}>
+                <h1 className={style.createpostButtonText}>Створити пост</h1>
+            </button>
             
             <div className={style.profileAndLanguageButtons}>
                 <button className={style.languageButton}>
@@ -49,6 +36,10 @@ export function Header() {
                     <Profile className={style.profileImage} />
                 </button>
             </div>
+
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+                <CreatePostForm onSuccess={() => setIsModalOpen(false)} />
+            </Modal>
         </header>
     );
 }

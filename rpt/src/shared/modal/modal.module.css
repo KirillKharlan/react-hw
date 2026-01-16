@@ -1,36 +1,46 @@
-.modalOverlay {
-    position: absolute;
-    top: 100%;
+.fixedOverlay {
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Темний напівпрозорий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 9999;
-    background: none; 
+    backdrop-filter: blur(2px); /* Легке розмиття фону */
 }
 
 .modalContent {
     background: white;
-    width: 100%;
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    width: clamp(300px, 90%, 500px); /* Адаптивна ширина */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: modalAppear 0.3s ease-out;
 }
+
 .closeButton {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
+    color: #999;
     line-height: 1;
 }
 
-.relativeOverlay {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    margin-top: 0.5rem;
-    z-index: 1000;
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

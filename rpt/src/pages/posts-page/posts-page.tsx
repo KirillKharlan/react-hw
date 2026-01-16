@@ -3,8 +3,7 @@ import { ITag } from "../../shared/types";
 import { Filter } from "../../components/filter/filter";
 import { PostsList } from "../../app/postsList";
 import { Layout } from "../../app/layout/layout";
-import { usePosts } from "../../hooks/usePosts";
-
+import { PostContextProvider, usePostContext } from "../../context/PostsContext";
 
 export const tagsList: ITag[] = [
     { id: 0, name: "#Programming" },
@@ -12,39 +11,39 @@ export const tagsList: ITag[] = [
     { id: 2, name: "#React" }
 ];
 
-export function PostsPage() {
-    const { allPosts, filteredPosts, setFilteredPosts, loading, error } = usePosts();
+function PostsPageContent() {
+    const { filteredPosts, loading, error } = usePostContext();
 
     if (loading) {
-        return (
-            <Layout>
-                <div className={style.loader}>Завантаження постів...</div>
-            </Layout>
-        );
+        return <div className={style.loader}>Завантаження постів...</div>;
     }
 
     if (error) {
-        return <Layout><div>Помилка: {error}</div></Layout>;
+        return <div>Помилка: {error}</div>;
     }
 
     return (
-        <Layout>
-            <div className={style.postPage}>
-                <div className={style.postsPageContent}>
-                    <Filter 
-                        tags={tagsList} 
-                        allPosts={allPosts} 
-                        setFilteredPosts={setFilteredPosts} 
-                    />
-                    
-                    <div className={style.resultsContainer}>
-                        <h2 className={style.countText}>
-                            Знайдено постів: {filteredPosts.length}
-                        </h2>
-                        <PostsList posts={filteredPosts} />
-                    </div>
+        <div className={style.postPage}>
+            <div className={style.postsPageContent}>
+                <Filter tags={tagsList} /> 
+                
+                <div className={style.resultsContainer}>
+                    <h2 className={style.countText}>
+                        Знайдено постів: {filteredPosts.length}
+                    </h2>
+                    <PostsList />
                 </div>
             </div>
+        </div>
+    );
+}
+
+export function PostsPage() {
+    return (
+        <Layout>
+            <PostContextProvider>
+                <PostsPageContent />
+            </PostContextProvider>
         </Layout>
     );
 }

@@ -18,16 +18,6 @@
     border-bottom: 0.0625rem solid #BBB4B4; 
 }
 
-.createPostWrapper {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: clamp(3.75rem, 21%, 23.75rem);
-    height: clamp(0.5625rem, 100%, 3.75rem);
-    flex-shrink: 0;
-}
-
 .mainPageButton, 
 .allpostsPageButton, 
 .createpostButton {
@@ -37,35 +27,43 @@
     align-items: center;
     padding: 0.6875rem clamp(0.3125rem, 2vw, 1.875rem);
     column-gap: clamp(0.125rem, 2vw, 0.625rem);
-    width: 100%; 
-    height: 100%;
+    width: clamp(3.75rem, 21%, 23.75rem);
+    height: clamp(0.5625rem, 100%, 3.75rem);
     background: #2382FF;
+    border: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    flex-shrink: 0; 
     box-shadow: 
         0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
         0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
         0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
         0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-    border: none;
-    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
 }
 
-.mainPageButton, .allpostsPageButton {
-    width: clamp(3.75rem, 21%, 23.75rem);
+.mainPageButton:active, 
+.allpostsPageButton:active, 
+.createpostButton:active {
+    transform: scale(0.98);
+}
+
+.createpostButton:hover {
+    background-color: #1a6cd4;
 }
 
 .mainButtonText, 
 .allpostsButtonText, 
-.createpostButtonText,
-.languageButtonText {
+.createpostButtonText {
     width: auto; 
     height: clamp(1.375rem, 100%, 2.75rem);
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: clamp(0.875rem, 2vw, 1.875rem);
     line-height: clamp(1.875rem, 1vw, 2.75rem);
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
 .profileAndLanguageButtons {
@@ -91,19 +89,28 @@
     width: clamp(1.75rem, 65%, 11.25rem);
     height: clamp(0.5625rem, 100%, 3.75rem);
     background: #2382FF;
+    border: none;
+    border-radius: 1.25rem;
+    cursor: pointer;
     box-shadow: 
         0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
         0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
         0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
         0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-    border: none;
-    cursor: pointer;
+}
+
+.languageButtonText {
+    width: auto; 
+    height: clamp(1.375rem, 100%, 2.75rem);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.875rem, 2vw, 1.875rem);
+    line-height: clamp(1.875rem, 1vw, 2.75rem);
+    color: #FFFFFF;
 }
 
 .profileButton {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: clamp(2.5rem, 5vw, 3.75rem); 
@@ -112,17 +119,17 @@
     background: #FAF1F1;
     border: none;
     cursor: pointer;
+    border-radius: 1.25rem;
     box-shadow: 
         0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
         0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
         0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
         0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
+    overflow: hidden;
 }
 
 .profileImage {
     width: 100%; 
     height: 100%; 
-    border-radius: 1.25rem; 
     object-fit: cover; 
 }

@@ -1,11 +1,13 @@
 import style from './postsList.module.css';
-import { IProps } from './types';
 import { PostCard } from '../postCard/postCard';
+import { usePostContext } from '../../context/PostsContext'; 
 
-export function PostsList(props: IProps) {
+export function PostsList() {
+    const { filteredPosts } = usePostContext();
+
     return (
         <div className={style.posts}>
-            {props.posts.map((post) => (
+            {filteredPosts.map((post) => (
                 <PostCard key={post.id} post={post} />
             ))}
         </div>

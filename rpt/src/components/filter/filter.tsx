@@ -1,80 +1,69 @@
-import style from "./filter.module.css"
-import { InputSearch } from "../searchfield/searchfield"
-import { IPost, ITag, IFilteredProps } from "../../shared/types"
-import { useState, useEffect } from "react"
+import style from "./filter.module.css";
+import { InputSearch } from "../searchfield/searchfield";
+import { IFilteredProps } from "../../shared/types";
+import { usePostContext } from "../../context/PostsContext"; 
 
-
-export function Filter(props: IFilteredProps) {
-    const { tags, allPosts, setFilteredPosts } = props;
-    const [inputLikes, setInputLikes] = useState<number>(-1);
-    const [inputTags, setInputTags] = useState<string>("");
-    const [searchQuery, setSearchQuery] = useState<string>("");
-
-
-    useEffect(() => {
-        const result = allPosts.filter((post) => {
-            const matchesSearch = post.name
-                .toLowerCase()
-                .includes(searchQuery.toLowerCase());
-            const matchesLikes = post.likes > inputLikes;
-            const matchesTags = inputTags 
-                ? post.tags.some((tag) => tag.tagName === inputTags) 
-                : true;
-            return matchesSearch && matchesLikes && matchesTags;
-        });
-        setFilteredPosts(result);
-    }, [searchQuery, inputLikes, inputTags, allPosts, setFilteredPosts]);
+export function Filter({ tags }: IFilteredProps) {
+    const { 
+        minLikes, 
+        setMinLikes,
+    } = usePostContext();
 
     return (
         <div className={style.filter}>
-            <InputSearch 
-                inputValue={searchQuery} 
-                setInputValue={setSearchQuery} 
-            />
+            <InputSearch />
+
             <div className={style.filterLikesPart}>
                 <div className={style.searchLikes}> 
                     <h1 className={style.likesText}>Пошук постів по лайкам</h1>
                     <div className={style.likesFields}>
                         <div className={style.likesField}>
                             <input className={style.inputButton} type="radio" 
-                                value="-1"
+                                value="0"
                                 name="likesFilter" 
                                 id="likebutton0" 
-                                defaultChecked
-                                onChange={(event) => setInputLikes(Number(event.target.value))} 
+                                checked={minLikes === 0}
+                                onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
                             <label className={style.filterLabel} htmlFor="likebutton0">0 Лайків</label>
                         </div>
+
                         <div className={style.likesField}>
                             <input className={style.inputButton} type="radio" 
-                                value="0"
+                                value="1"
                                 name="likesFilter" 
                                 id="likebuttonmore0" 
-                                onChange={(event) => setInputLikes(Number(event.target.value))} 
+                                checked={minLikes === 1}
+                                onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
                             <label className={style.filterLabel} htmlFor="likebuttonmore0">Більше 0</label>
                         </div>
+
                         <div className={style.likesField}>
                             <input className={style.inputButton} type="radio" 
                                 value="50"
                                 name="likesFilter" 
                                 id="likebutton50" 
-                                onChange={(event) => setInputLikes(Number(event.target.value))} 
+                                checked={minLikes === 50}
+                                onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
                             <label className={style.filterLabel} htmlFor="likebutton50">Більше 50</label>
                         </div>
+
                         <div className={style.likesField}>
                             <input className={style.inputButton} type="radio" 
                                 value="100"
                                 name="likesFilter" 
                                 id="likebutton100" 
-                                onChange={(event) => setInputLikes(Number(event.target.value))} 
+                                checked={minLikes === 100}
+                                onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
                             <label className={style.filterLabel} htmlFor="likebutton100">Більше 100</label>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className={style.filterTagsPart}>
                 <div className={style.tagsPart}>
                     <h1 className={style.tagsText}>Пошук постів за тегами</h1>
@@ -85,7 +74,6 @@ export function Filter(props: IFilteredProps) {
                                 name="tagsFilter" 
                                 id="all-tags"
                                 defaultChecked
-                                onChange={() => setInputTags("")} 
                             />
                             <label className={style.filterLabel} htmlFor="all-tags">Всі теги</label>
                         </div>
@@ -95,7 +83,6 @@ export function Filter(props: IFilteredProps) {
                                     value={tag.name}
                                     name="tagsFilter" 
                                     id={`tag-${tag.id}`}
-                                    onChange={(event) => setInputTags(event.target.value)} 
                                 />
                                 <label className={style.filterLabel} htmlFor={`tag-${tag.id}`}>{tag.name}</label>
                             </div>
