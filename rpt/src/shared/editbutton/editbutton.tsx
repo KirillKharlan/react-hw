@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './editbutton.module.css';
+import { useLocalization } from '../context/LocalizationContext'; 
 
 interface EditButtonProps {
     onClick: () => void;
@@ -10,15 +11,17 @@ interface EditButtonProps {
 export const EditButton: React.FC<EditButtonProps> = ({ 
     onClick, 
     className, 
-    label = "Редагувати" 
+    label 
 }) => {
+    const { translate } = useLocalization();
+
     return (
         <button 
             className={`${style.editBtn} ${className || ''}`} 
             onClick={onClick}
             type="button"
         >
-            {label}
+            {label || translate("common.edit")}
         </button>
     );
 };

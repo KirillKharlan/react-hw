@@ -4,6 +4,7 @@ import { Filter } from "../../components/filter/filter";
 import { PostsList } from "../../app/postsList";
 import { Layout } from "../../app/layout/layout";
 import { PostContextProvider, usePostContext } from "../../context/PostsContext";
+import { useLocalization } from "../../shared/context/LocalizationContext"; 
 
 export const tagsList: ITag[] = [
     { id: 0, name: "#Programming" },
@@ -13,13 +14,14 @@ export const tagsList: ITag[] = [
 
 function PostsPageContent() {
     const { filteredPosts, loading, error } = usePostContext();
+    const { translate } = useLocalization();
 
     if (loading) {
-        return <div className={style.loader}>Завантаження постів...</div>;
+        return <div className={style.loader}>{translate("common.loading")}</div>;
     }
 
     if (error) {
-        return <div>Помилка: {error}</div>;
+        return <div>{translate("common.error")}: {error}</div>;
     }
 
     return (
@@ -29,7 +31,7 @@ function PostsPageContent() {
                 
                 <div className={style.resultsContainer}>
                     <h2 className={style.countText}>
-                        Знайдено постів: {filteredPosts.length}
+                        {translate("posts.found_count", { count: filteredPosts.length })}
                     </h2>
                     <PostsList />
                 </div>

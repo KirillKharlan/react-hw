@@ -2,12 +2,14 @@ import style from "./filter.module.css";
 import { InputSearch } from "../searchfield/searchfield";
 import { IFilteredProps } from "../../shared/types";
 import { usePostContext } from "../../context/PostsContext"; 
+import { useLocalization } from "../../shared/context/LocalizationContext"; 
 
 export function Filter({ tags }: IFilteredProps) {
     const { 
         minLikes, 
         setMinLikes,
     } = usePostContext();
+    const { translate } = useLocalization();
 
     return (
         <div className={style.filter}>
@@ -15,7 +17,7 @@ export function Filter({ tags }: IFilteredProps) {
 
             <div className={style.filterLikesPart}>
                 <div className={style.searchLikes}> 
-                    <h1 className={style.likesText}>Пошук постів по лайкам</h1>
+                    <h1 className={style.likesText}>{translate("filter.title_likes")}</h1>
                     <div className={style.likesFields}>
                         <div className={style.likesField}>
                             <input className={style.inputButton} type="radio" 
@@ -25,7 +27,9 @@ export function Filter({ tags }: IFilteredProps) {
                                 checked={minLikes === 0}
                                 onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
-                            <label className={style.filterLabel} htmlFor="likebutton0">0 Лайків</label>
+                            <label className={style.filterLabel} htmlFor="likebutton0">
+                                {translate("filter.zero_likes")}
+                            </label>
                         </div>
 
                         <div className={style.likesField}>
@@ -36,7 +40,9 @@ export function Filter({ tags }: IFilteredProps) {
                                 checked={minLikes === 1}
                                 onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
-                            <label className={style.filterLabel} htmlFor="likebuttonmore0">Більше 0</label>
+                            <label className={style.filterLabel} htmlFor="likebuttonmore0">
+                                {translate("filter.more_than", { count: 0 })}
+                            </label>
                         </div>
 
                         <div className={style.likesField}>
@@ -47,7 +53,9 @@ export function Filter({ tags }: IFilteredProps) {
                                 checked={minLikes === 50}
                                 onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
-                            <label className={style.filterLabel} htmlFor="likebutton50">Більше 50</label>
+                            <label className={style.filterLabel} htmlFor="likebutton50">
+                                {translate("filter.more_than", { count: 50 })}
+                            </label>
                         </div>
 
                         <div className={style.likesField}>
@@ -58,7 +66,9 @@ export function Filter({ tags }: IFilteredProps) {
                                 checked={minLikes === 100}
                                 onChange={(event) => setMinLikes(Number(event.target.value))} 
                             />
-                            <label className={style.filterLabel} htmlFor="likebutton100">Більше 100</label>
+                            <label className={style.filterLabel} htmlFor="likebutton100">
+                                {translate("filter.more_than", { count: 100 })}
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -66,7 +76,7 @@ export function Filter({ tags }: IFilteredProps) {
 
             <div className={style.filterTagsPart}>
                 <div className={style.tagsPart}>
-                    <h1 className={style.tagsText}>Пошук постів за тегами</h1>
+                    <h1 className={style.tagsText}>{translate("filter.title_tags")}</h1>
                     <div className={style.tags}>
                         <div className={style.tagField}>
                             <input className={style.inputButton} type="radio"
@@ -75,7 +85,9 @@ export function Filter({ tags }: IFilteredProps) {
                                 id="all-tags"
                                 defaultChecked
                             />
-                            <label className={style.filterLabel} htmlFor="all-tags">Всі теги</label>
+                            <label className={style.filterLabel} htmlFor="all-tags">
+                                {translate("filter.all_tags")}
+                            </label>
                         </div>
                         {tags.map((tag) => (
                             <div key={tag.id} className={style.tagField}>

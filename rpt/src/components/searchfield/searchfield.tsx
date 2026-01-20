@@ -10,7 +10,7 @@ export function InputSearch() {
                 <input
                     className={style.inputSearch}
                     type="text"
-                    placeholder="Пошук постів..."
+                    placeholder="Posts search..."
                     value={inputData}
                     onChange={(e) => setInputData(e.target.value)}
                 />

@@ -1,0 +1,152 @@
+{
+  "header.home": {
+    "en": "Home",
+    "uk": "Головна",
+    "es": "Inicio"
+  },
+  "header.all_posts": {
+    "en": "All Posts",
+    "uk": "Усі пости",
+    "es": "Todos los posts"
+  },
+  "header.create_post": {
+    "en": "Create Post",
+    "uk": "Створити пост",
+    "es": "Crear post"
+  },
+  "header.language": {
+    "en": "Language",
+    "uk": "Мова",
+    "es": "Idioma"
+  },
+  "post.likes": {
+    "en": "Likes",
+    "uk": "Лайків",
+    "es": "Me gusta"
+  },
+  "post.comment_placeholder": {
+    "en": "Write a comment...",
+    "uk": "Напишіть коментар...",
+    "es": "Escribe un comentario..."
+  },
+  "post.comments_title": {
+    "en": "Comments ({count})",
+    "uk": "Коментарі ({count})",
+    "es": "Comentarios ({count})"
+  },
+  "post.no_comments": {
+    "en": "Be the first to comment!",
+    "uk": "Будьте першим, хто прокоментує!",
+    "es": "¡Sé el primero en comentar!"
+  },
+  "post.delete_confirm": {
+    "en": "Are you sure you want to delete this comment?",
+    "uk": "Ви впевнені, що хочете видалити цей коментар?",
+    "es": "¿Estás seguro de que quieres eliminar este comentario?"
+  },
+  "post.created_at": {
+    "en": "Created: {date}",
+    "uk": "Створено: {date}",
+    "es": "Creado: {date}"
+  },
+  "post.tags_label": {
+    "en": "Tags:",
+    "uk": "Теги:",
+    "es": "Etiquetas:"
+  },
+  "form.create_title": {
+    "en": "Create Post",
+    "uk": "Створити пост",
+    "es": "Crear post"
+  },
+  "form.title_placeholder": {
+    "en": "Post title",
+    "uk": "Заголовок поста",
+    "es": "Título del post"
+  },
+  "form.desc_placeholder": {
+    "en": "Post description",
+    "uk": "Опис поста",
+    "es": "Descripción del post"
+  },
+  "form.submit": {
+    "en": "Create",
+    "uk": "Створити",
+    "es": "Crear"
+  },
+  "form.submitting": {
+    "en": "Sending...",
+    "uk": "Надсилання...",
+    "es": "Enviando..."
+  },
+  "filter.title_likes": {
+    "en": "Search by likes",
+    "uk": "Пошук по лайкам",
+    "es": "Buscar por likes"
+  },
+  "filter.title_tags": {
+    "en": "Search by tags",
+    "uk": "Пошук за тегами",
+    "es": "Buscar por etiquetas"
+  },
+  "filter.all_tags": {
+    "en": "All tags",
+    "uk": "Всі теги",
+    "es": "Todas las etiquetas"
+  },
+  "filter.more_than": {
+    "en": "More than {count}",
+    "uk": "Більше ніж {count}",
+    "es": "Más de {count}"
+  },
+  "filter.zero_likes": {
+    "en": "0 Likes",
+    "uk": "0 Лайків",
+    "es": "0 Likes"
+  },
+  "filter.search_placeholder": {
+    "en": "Search posts...",
+    "uk": "Пошук постів...",
+    "es": "Buscar posts..."
+  },
+  "footer.author": {
+    "en": "Site author: myname",
+    "uk": "Автор сайту: myname",
+    "es": "Autor del sitio: myname"
+  },
+  "footer.social": {
+    "en": "Our social networks",
+    "uk": "Наші соцмережі",
+    "es": "Nuestras redes sociales"
+  },
+  "common.error": {
+    "en": "Error",
+    "uk": "Помилка",
+    "es": "Error"
+  },
+  "common.loading": {
+    "en": "Loading...",
+    "uk": "Завантаження...",
+    "es": "Cargando..."
+  },
+  "common.not_found": {
+    "en": "Post not found",
+    "uk": "Пост не знайдено",
+    "es": "Post no encontrado"
+  },
+  "common.back_home": {
+    "en": "Back home",
+    "uk": "На головну",
+    "es": "Volver al inicio"
+  },
+  "common.edit": {
+    "en": "Edit",
+    "uk": "Редагувати",
+    "es": "Editar"
+  },
+  "posts.found_count": {
+    "en": "Posts found: {count}",
+    "uk": "Знайдено постів: {count}",
+    "es": "Posts encontrados: {count}"
+  }
+}
