@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: #FAF1F1;
+    min-height: 100vh;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 75rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.avatarCircle {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: 0.125rem solid #7a7a7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+    color: #2382FF;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.usernameDisplay {
+    padding: 1rem 2.5rem;
+    border: 0.0625rem solid #7a7a7a;
+    border-radius: 0.9375rem;
+    background: #fff;
+    color: #2382FF;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    min-width: 15rem;
+    text-align: center;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.blueBtn {
+    background-color: #2382FF;
+    color: #FAF1F1;
+    border: 0.125rem solid #000000;
+    padding: 1rem 2.5rem;
+    border-radius: 0.9375rem;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+
+.blueBtn:active {
+    transform: scale(0.98);
+}
+
+.tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tabBtn {
+    background-color: #2382FF;
+    color: #FAF1F1;
+    border: 0.125rem solid #000000;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    min-width: 12rem;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+
+.activeTab {
+    background-color: #FAF1F1;
+    color: #2382FF;
+    border: 0.125rem solid #2382FF;
+}
+
+.contentList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descriptionText {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #000000;
+    text-align: center;
+    max-width: 45rem;
+    margin: 2rem auto;
+    white-space: pre-line;
+}
+
+.postsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    width: 100%;
+}

@@ -1,15 +1,12 @@
-.posts {
+.postsList {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    padding-top: 1.875rem;
-    padding-bottom: 1.875rem;
-    gap: 1.875rem;
-    width: auto;
-    height: 100%;
-    order: 1;
+    padding: 2rem 0;
+    gap: 3rem;
+    width: 100%;
     background: #FAF1F1;
+    min-height: 100vh;
     flex-grow: 1;
     overflow-y: auto;
     max-height: 67.5rem;

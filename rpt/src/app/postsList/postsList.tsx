@@ -6,7 +6,7 @@ export function PostsList() {
     const { filteredPosts } = usePostContext();
 
     return (
-        <div className={style.posts}>
+        <div className={style.postsList}>
             {filteredPosts.map((post) => (
                 <PostCard key={post.id} post={post} />
             ))}

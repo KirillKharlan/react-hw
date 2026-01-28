@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FAF1F1;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.errorCode {
+    font-size: 8rem;
+    color: #2382FF;
+    margin: 0;
+    line-height: 1;
+}
+
+.message {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.backBtn {
+    background-color: #2382FF;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.backBtn:hover {
+    transform: scale(1.05);
+}

@@ -148,5 +148,75 @@
     "en": "Posts found: {count}",
     "uk": "Знайдено постів: {count}",
     "es": "Posts encontrados: {count}"
+  },
+  "profile.edit": {
+    "en": "Edit profile",
+    "uk": "Редагувати профіль",
+    "es": "Editar perfil"
+  },
+  "profile.posts": {
+    "en": "Posts",
+    "uk": "Пости",
+    "es": "Posts"
+  },
+  "profile.comments": {
+    "en": "Comments",
+    "uk": "Коментарі",
+    "es": "Comentarios"
+  },
+  "profile.likes": {
+    "en": "Likes",
+    "uk": "Лайки",
+    "es": "Me gusta"
+  },
+  "auth.login": { 
+    "en": "Login", 
+    "uk": "Вхід", 
+    "es": "Inicio de sesión" 
+  },
+  "auth.register": { 
+    "en": "Register", 
+    "uk": "Реєстрація", 
+    "es": "Registro" 
+  },
+  "auth.email": { 
+    "en": "Email", 
+    "uk": "Email", 
+    "es": "Correo" 
+  },
+  "auth.password": { 
+    "en": "Password", 
+    "uk": "Пароль", 
+    "es": "Contraseña" 
+  },
+  "auth.firstname": { 
+    "en": "Firstname", 
+    "uk": "Ім'я", 
+    "es": "Nombre" 
+  },
+  "auth.secondname": { 
+    "en": "Secondname", 
+    "uk": "Прізвище", 
+    "es": "Apellido" 
+  },
+  "auth.avatar": { 
+    "en": "Avatar URL", 
+    "uk": "Посилання на аватар", 
+    "es": "URL del avatar" 
+  },
+  "auth.accept": { 
+    "en": "Accept", 
+    "uk": "Підтвердити", 
+    "es": "Aceptar" 
+  },
+  "auth.no_account": { 
+    "en": "Don't have an account?", 
+    "uk": "Немає акаунту?", 
+    "es": "¿No tienes cuenta?" 
+  },
+  "auth.have_account": { 
+    "en": "Already have an account?", 
+    "uk": "Вже є акаунт?", 
+    "es": "¿Ya tienes cuenta?" 
   }
 }

@@ -1,0 +1,105 @@
+.authContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333333;
+}
+
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FAF1F1;
+    padding: 2rem 3rem;
+    border-radius: 1.25rem;
+    width: 100%;
+    max-width: 35rem;
+    border: 0.0625rem solid #BBB4B4;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2382FF;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.field {
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #FAF1F1;
+    border: 0.0625rem solid #BBB4B4;
+    border-radius: 0.625rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #2382FF;
+    outline: none;
+    /* Тінь для кожного поля в реєстрації */
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 0.875rem;
+    margin-top: 1rem;
+    background-color: #2382FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 
+        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
+        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
+        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
+        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+.submitBtn:active {
+    transform: scale(0.98);
+}
+
+.footer {
+    margin-top: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: #333;
+}
+
+.linkBtn {
+    background: none;
+    border: none;
+    color: #2382FF;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .registerForm {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
