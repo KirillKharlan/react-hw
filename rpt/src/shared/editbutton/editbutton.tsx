@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './editbutton.module.css';
-import { useLocalization } from '../context/LocalizationContext'; 
+import { useLocalization } from '../../context/LocalizationContext'; 
 
 interface EditButtonProps {
     onClick: () => void;

@@ -4,7 +4,7 @@ import { Filter } from "../../components/filter/filter";
 import { PostsList } from "../../app/postsList";
 import { Layout } from "../../app/layout/layout";
 import { PostContextProvider, usePostContext } from "../../context/PostsContext";
-import { useLocalization } from "../../shared/context/LocalizationContext"; 
+import { useLocalization } from "../../context/LocalizationContext"; 
 
 export const tagsList: ITag[] = [
     { id: 0, name: "#Programming" },

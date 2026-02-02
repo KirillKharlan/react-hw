@@ -2,221 +2,478 @@
   "header.home": {
     "en": "Home",
     "uk": "Головна",
-    "es": "Inicio"
+    "es": "Inicio",
+    "de": "Startseite",
+    "fr": "Accueil",
+    "pl": "Strona główna",
+    "pt": "Início"
   },
   "header.all_posts": {
     "en": "All Posts",
     "uk": "Усі пости",
-    "es": "Todos los posts"
+    "es": "Todos los posts",
+    "de": "Alle Beiträge",
+    "fr": "Tous les messages",
+    "pl": "Wszystkie posty",
+    "pt": "Todos os posts"
   },
   "header.create_post": {
     "en": "Create Post",
     "uk": "Створити пост",
-    "es": "Crear post"
+    "es": "Crear post",
+    "de": "Beitrag erstellen",
+    "fr": "Créer un message",
+    "pl": "Utwórz post",
+    "pt": "Criar post"
   },
   "header.language": {
     "en": "Language",
     "uk": "Мова",
-    "es": "Idioma"
+    "es": "Idioma",
+    "de": "Sprache",
+    "fr": "Langue",
+    "pl": "Język",
+    "pt": "Idioma"
   },
   "post.likes": {
     "en": "Likes",
     "uk": "Лайків",
-    "es": "Me gusta"
+    "es": "Me gusta",
+    "de": "Gefällt mir",
+    "fr": "J'aime",
+    "pl": "Polubienia",
+    "pt": "Curtidas"
   },
   "post.comment_placeholder": {
     "en": "Write a comment...",
     "uk": "Напишіть коментар...",
-    "es": "Escribe un comentario..."
+    "es": "Escribe un comentario...",
+    "de": "Einen Kommentar schreiben...",
+    "fr": "Écrire un commentaire...",
+    "pl": "Napisz komentarz...",
+    "pt": "Escreva um comentário..."
   },
   "post.comments_title": {
     "en": "Comments ({count})",
     "uk": "Коментарі ({count})",
-    "es": "Comentarios ({count})"
+    "es": "Comentarios ({count})",
+    "de": "Kommentare ({count})",
+    "fr": "Commentaires ({count})",
+    "pl": "Komentarze ({count})",
+    "pt": "Comentários ({count})"
   },
   "post.no_comments": {
     "en": "Be the first to comment!",
     "uk": "Будьте першим, хто прокоментує!",
-    "es": "¡Sé el primero en comentar!"
+    "es": "¡Sé el primero en comentar!",
+    "de": "Schreibe den ersten Kommentar!",
+    "fr": "Soyez le premier à commenter!",
+    "pl": "Bądź pierwszą osobą, яка skomentuje!",
+    "pt": "Seja o primeiro a comentar!"
   },
   "post.delete_confirm": {
     "en": "Are you sure you want to delete this comment?",
     "uk": "Ви впевнені, що хочете видалити цей коментар?",
-    "es": "¿Estás seguro de que quieres eliminar este comentario?"
+    "es": "¿Estás seguro de que quieres eliminar este comentario?",
+    "de": "Möchten Sie diesen Kommentar wirklich löschen?",
+    "fr": "Êtes-vous sûr de vouloir supprimer ce commentaire ?",
+    "pl": "Czy na pewno chcesz usunąć ten komentarz?",
+    "pt": "Tem certeza de que deseja excluir este comentário?"
   },
   "post.created_at": {
     "en": "Created: {date}",
     "uk": "Створено: {date}",
-    "es": "Creado: {date}"
+    "es": "Creado: {date}",
+    "de": "Erstellt am: {date}",
+    "fr": "Créé le : {date}",
+    "pl": "Utworzono: {date}",
+    "pt": "Criado em: {date}"
   },
   "post.tags_label": {
     "en": "Tags:",
     "uk": "Теги:",
-    "es": "Etiquetas:"
+    "es": "Etiquetas:",
+    "de": "Schlagworte:",
+    "fr": "Étiquettes :",
+    "pl": "Tagi:",
+    "pt": "Tags:"
   },
   "form.create_title": {
     "en": "Create Post",
     "uk": "Створити пост",
-    "es": "Crear post"
+    "es": "Crear post",
+    "de": "Beitrag erstellen",
+    "fr": "Créer un message",
+    "pl": "Utwórz post",
+    "pt": "Criar post"
   },
   "form.title_placeholder": {
     "en": "Post title",
     "uk": "Заголовок поста",
-    "es": "Título del post"
+    "es": "Título del post",
+    "de": "Titel des Beitrags",
+    "fr": "Titre du message",
+    "pl": "Tytuł posta",
+    "pt": "Título do post"
   },
   "form.desc_placeholder": {
     "en": "Post description",
     "uk": "Опис поста",
-    "es": "Descripción del post"
+    "es": "Descripción del post",
+    "de": "Beschreibung des Beitrags",
+    "fr": "Description du message",
+    "pl": "Opis posta",
+    "pt": "Descrição do post"
   },
   "form.submit": {
     "en": "Create",
     "uk": "Створити",
-    "es": "Crear"
+    "es": "Crear",
+    "de": "Erstellen",
+    "fr": "Créer",
+    "pl": "Utwórz",
+    "pt": "Criar"
   },
   "form.submitting": {
     "en": "Sending...",
     "uk": "Надсилання...",
-    "es": "Enviando..."
+    "es": "Enviando...",
+    "de": "Wird gesendet...",
+    "fr": "Envoi en cours...",
+    "pl": "Wysyłanie...",
+    "pt": "Enviando..."
   },
   "filter.title_likes": {
     "en": "Search by likes",
     "uk": "Пошук по лайкам",
-    "es": "Buscar por likes"
+    "es": "Buscar por likes",
+    "de": "Nach Likes suchen",
+    "fr": "Recherche par mentions j'aime",
+    "pl": "Szukaj według polubień",
+    "pt": "Pesquisar por curtidas"
   },
   "filter.title_tags": {
     "en": "Search by tags",
     "uk": "Пошук за тегами",
-    "es": "Buscar por etiquetas"
+    "es": "Buscar por etiquetas",
+    "de": "Nach Schlagworten suchen",
+    "fr": "Recherche par étiquettes",
+    "pl": "Szukaj według tagów",
+    "pt": "Pesquisar por tags"
   },
   "filter.all_tags": {
     "en": "All tags",
     "uk": "Всі теги",
-    "es": "Todas las etiquetas"
+    "es": "Todas las etiquetas",
+    "de": "Alle Schlagworte",
+    "fr": "Toutes les étiquettes",
+    "pl": "Wszystkie tagi",
+    "pt": "Todas as tags"
   },
   "filter.more_than": {
     "en": "More than {count}",
     "uk": "Більше ніж {count}",
-    "es": "Más de {count}"
+    "es": "Más de {count}",
+    "de": "Mehr als {count}",
+    "fr": "Plus de {count}",
+    "pl": "Więcej niż {count}",
+    "pt": "Mais de {count}"
   },
   "filter.zero_likes": {
     "en": "0 Likes",
     "uk": "0 Лайків",
-    "es": "0 Likes"
+    "es": "0 Likes",
+    "de": "0 Likes",
+    "fr": "0 J'aime",
+    "pl": "0 polubień",
+    "pt": "0 curtidas"
   },
   "filter.search_placeholder": {
     "en": "Search posts...",
     "uk": "Пошук постів...",
-    "es": "Buscar posts..."
+    "es": "Buscar posts...",
+    "de": "Beiträge suchen...",
+    "fr": "Rechercher des messages...",
+    "pl": "Szukaj postów...",
+    "pt": "Pesquisar posts..."
   },
   "footer.author": {
     "en": "Site author: myname",
     "uk": "Автор сайту: myname",
-    "es": "Autor del sitio: myname"
+    "es": "Autor del sitio: myname",
+    "de": "Autor der Website: myname",
+    "fr": "Auteur du site : myname",
+    "pl": "Autor strony: myname",
+    "pt": "Autor do site: myname"
   },
   "footer.social": {
     "en": "Our social networks",
     "uk": "Наші соцмережі",
-    "es": "Nuestras redes sociales"
+    "es": "Nuestras redes sociales",
+    "de": "Unsere sozialen Netzwerke",
+    "fr": "Nos réseaux sociaux",
+    "pl": "Nasze media społecznościowe",
+    "pt": "Nossas redes sociais"
   },
   "common.error": {
     "en": "Error",
     "uk": "Помилка",
-    "es": "Error"
+    "es": "Error",
+    "de": "Fehler",
+    "fr": "Erreur",
+    "pl": "Błąd",
+    "pt": "Erro"
   },
   "common.loading": {
     "en": "Loading...",
     "uk": "Завантаження...",
-    "es": "Cargando..."
+    "es": "Cargando...",
+    "de": "Wird geladen...",
+    "fr": "Chargement...",
+    "pl": "Ładowanie...",
+    "pt": "Carregando..."
   },
   "common.not_found": {
     "en": "Post not found",
     "uk": "Пост не знайдено",
-    "es": "Post no encontrado"
+    "es": "Post no encontrado",
+    "de": "Beitrag nicht gefunden",
+    "fr": "Message non trouvé",
+    "pl": "Nie znaleziono posta",
+    "pt": "Post não encontrado"
   },
   "common.back_home": {
     "en": "Back home",
     "uk": "На головну",
-    "es": "Volver al inicio"
+    "es": "Volver al inicio",
+    "de": "Zurück zur Startseite",
+    "fr": "Retour à l'accueil",
+    "pl": "Powrót do strony głównej",
+    "pt": "Voltar ao início"
   },
   "common.edit": {
     "en": "Edit",
     "uk": "Редагувати",
-    "es": "Editar"
+    "es": "Editar",
+    "de": "Bearbeiten",
+    "fr": "Modifier",
+    "pl": "Edytuj",
+    "pt": "Editar"
+  },
+  "common.optional": {
+    "en": "optional",
+    "uk": "необов'язково",
+    "es": "opcional",
+    "de": "optional",
+    "fr": "facultatif",
+    "pl": "opcjonalnie",
+    "pt": "opcional"
   },
   "posts.found_count": {
     "en": "Posts found: {count}",
     "uk": "Знайдено постів: {count}",
-    "es": "Posts encontrados: {count}"
+    "es": "Posts encontrados: {count}",
+    "de": "Beiträge gefunden: {count}",
+    "fr": "Messages trouvés : {count}",
+    "pl": "Znaleziono posty: {count}",
+    "pt": "Posts encontrados: {count}"
   },
   "profile.edit": {
     "en": "Edit profile",
     "uk": "Редагувати профіль",
-    "es": "Editar perfil"
+    "es": "Editar perfil",
+    "de": "Profil bearbeiten",
+    "fr": "Modifier le profil",
+    "pl": "Edytuj profil",
+    "pt": "Editar perfil"
   },
   "profile.posts": {
     "en": "Posts",
     "uk": "Пости",
-    "es": "Posts"
+    "es": "Posts",
+    "de": "Beiträge",
+    "fr": "Messages",
+    "pl": "Posty",
+    "pt": "Posts"
   },
   "profile.comments": {
     "en": "Comments",
     "uk": "Коментарі",
-    "es": "Comentarios"
+    "es": "Comentarios",
+    "de": "Kommentare",
+    "fr": "Commentaires",
+    "pl": "Komentarze",
+    "pt": "Comentários"
   },
   "profile.likes": {
     "en": "Likes",
     "uk": "Лайки",
-    "es": "Me gusta"
+    "es": "Me gusta",
+    "de": "Likes",
+    "fr": "J'aime",
+    "pl": "Polubienia",
+    "pt": "Curtidas"
   },
   "auth.login": { 
     "en": "Login", 
     "uk": "Вхід", 
-    "es": "Inicio de sesión" 
+    "es": "Inicio de sesión",
+    "de": "Anmelden",
+    "fr": "Connexion",
+    "pl": "Zaloguj",
+    "pt": "Entrar"
   },
   "auth.register": { 
     "en": "Register", 
     "uk": "Реєстрація", 
-    "es": "Registro" 
+    "es": "Registro",
+    "de": "Registrieren",
+    "fr": "S'inscrire",
+    "pl": "Zarejestruj",
+    "pt": "Registrar"
   },
   "auth.email": { 
     "en": "Email", 
     "uk": "Email", 
-    "es": "Correo" 
+    "es": "Correo",
+    "de": "E-Mail",
+    "fr": "Email",
+    "pl": "Email",
+    "pt": "E-mail"
   },
   "auth.password": { 
     "en": "Password", 
     "uk": "Пароль", 
-    "es": "Contraseña" 
+    "es": "Contraseña",
+    "de": "Passwort",
+    "fr": "Mot de passe",
+    "pl": "Hasło",
+    "pt": "Senha"
   },
   "auth.firstname": { 
     "en": "Firstname", 
     "uk": "Ім'я", 
-    "es": "Nombre" 
+    "es": "Nombre",
+    "de": "Vorname",
+    "fr": "Prénom",
+    "pl": "Imię",
+    "pt": "Primeiro nome"
   },
   "auth.secondname": { 
-    "en": "Secondname", 
+    "en": "Lastname", 
     "uk": "Прізвище", 
-    "es": "Apellido" 
+    "es": "Apellido",
+    "de": "Nachname",
+    "fr": "Nom",
+    "pl": "Nazwisko",
+    "pt": "Sobrenome"
   },
   "auth.avatar": { 
     "en": "Avatar URL", 
     "uk": "Посилання на аватар", 
-    "es": "URL del avatar" 
+    "es": "URL del avatar",
+    "de": "Avatar-URL",
+    "fr": "URL de l'avatar",
+    "pl": "URL awatara",
+    "pt": "URL do avatar"
   },
   "auth.accept": { 
     "en": "Accept", 
     "uk": "Підтвердити", 
-    "es": "Aceptar" 
+    "es": "Aceptar",
+    "de": "Bestätigen",
+    "fr": "Accepter",
+    "pl": "Akceptuj",
+    "pt": "Aceitar"
   },
   "auth.no_account": { 
     "en": "Don't have an account?", 
     "uk": "Немає акаунту?", 
-    "es": "¿No tienes cuenta?" 
+    "es": "¿No tienes cuenta?",
+    "de": "Haben Sie noch kein Konto?",
+    "fr": "Vous n'avez pas de compte ?",
+    "pl": "Nie masz konta?",
+    "pt": "Não tem uma conta?"
   },
   "auth.have_account": { 
     "en": "Already have an account?", 
     "uk": "Вже є акаунт?", 
-    "es": "¿Ya tienes cuenta?" 
+    "es": "¿Ya tienes cuenta?",
+    "de": "Haben Sie bereits ein Konto?",
+    "fr": "Vous avez déjà un compte ?",
+    "pl": "Masz już konto?",
+    "pt": "Já tem uma conta?"
+  },
+  "auth.error_message": {
+    "en": "Please check the correctness of the filled fields",
+    "uk": "Будь ласка, перевірте правильність заповнених полів",
+    "es": "Por favor, compruebe la corrección de los campos rellenados",
+    "de": "Bitte überprüfen Sie die Richtigkeit der ausgefüllten Felder",
+    "fr": "Veuillez vérifier l'exactitude des champs remplis",
+    "pl": "Proszę sprawdzić poprawność wypełnionych pól",
+    "pt": "Por favor, verifique a correção dos campos preenchidos"
+  },
+  "auth.error_email": {
+    "en": "Invalid email address",
+    "uk": "Некоректна адреса пошти",
+    "es": "Correo electrónico no válido",
+    "de": "Ungültige E-Mail-Adresse",
+    "fr": "Adresse e-mail invalide",
+    "pl": "Nieprawidłowy adres e-mail",
+    "pt": "Endereço de e-mail inválido"
+  },
+  "auth.error_password_short": {
+    "en": "Password must be at least 6 characters",
+    "uk": "Пароль має бути не менше 6 символів",
+    "es": "La contraseña debe tener al menos 6 caracteres",
+    "de": "Das Passwort muss mindestens 6 Zeichen lang sein",
+    "fr": "Le mot de passe doit contenir au moins 6 caractères",
+    "pl": "Hasło musi mieć co najmniej 6 znaków",
+    "pt": "A senha deve ter pelo menos 6 caracteres"
+  },
+  "auth.error_required": {
+    "en": "This field is required",
+    "uk": "Це поле є обов'язковим",
+    "es": "Este campo es obligatorio",
+    "de": "Dies ist ein Pflichtfeld",
+    "fr": "Ce champ est obligatoire",
+    "pl": "To pole jest wymagane",
+    "pt": "Este campo é obrigatório"
+  },
+  "profile.no_posts_yet": {
+    "en": "You haven't created any posts yet.",
+    "uk": "Ви ще не створили жодного поста.",
+    "es": "Aún no has creado ninguna publicación.",
+    "de": "Sie haben noch keine Beiträge erstellt.",
+    "fr": "Vous n'avez pas encore créé de messages.",
+    "pl": "Nie utworzyłeś jeszcze żadnych postów.",
+    "pt": "Você ainda não criou nenhum post."
+  },
+  "profile.no_comments_yet": {
+    "en": "You haven't left any comments yet.",
+    "uk": "Ви ще не залишили жодного коментаря.",
+    "es": "Aún no has dejado ningún comentario.",
+    "de": "Sie haben noch keine Kommentare hinterlassen.",
+    "fr": "Vous n'avez pas encore laissé de commentaires.",
+    "pl": "Nie zostawiłeś jeszcze żadnych komentarzy.",
+    "pt": "Você ainda não deixou nenhum comentário."
+  },
+  "profile.no_likes_yet": {
+    "en": "You haven't liked any posts yet.",
+    "uk": "Ви ще не вподобали жодного поста.",
+    "es": "Aún no te ha gustado ningún post.",
+    "de": "Sie haben noch keine Beiträge geliked.",
+    "fr": "Vous n'avez encore aimé aucun message.",
+    "pl": "Nie polubiłeś jeszcze żadnych postów.",
+    "pt": "Você ainda não curtiu nenhum post."
+  },
+  "profile.view_post": {
+    "en": "View post",
+    "uk": "До поста",
+    "es": "Ver publicación",
+    "de": "Beitrag anzeigen",
+    "fr": "Voir le message",
+    "pl": "Zobacz post",
+    "pt": "Ver post"
   }
 }

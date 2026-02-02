@@ -1,11 +1,11 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import { useLogin } from '../../hooks/useLogin';
-import { useAuthContext } from '../../shared/context/AuthContext'; 
+import { useAuthContext } from '../../context/AuthContext'; 
 import { IUserForm } from '../../shared/types';
-import { useLocalization } from '../../shared/context/LocalizationContext';
+import { useLocalization } from '../../context/LocalizationContext';
 import styles from './login-page.module.css';
+import { LanguageSwitcher } from '../../components/languageswitcher/languageswitcher';
 
 
 
@@ -14,43 +14,49 @@ type LoginFormData = Pick<IUserForm, 'email' | 'password'>;
 export const LoginPage: React.FC = () => {
     const navigate = useNavigate();
     const { translate } = useLocalization();
-    const { login: executeLogin, loading, error: serverError } = useLogin();
-    const { login: saveAuth } = useAuthContext();
-
+    const { login, loading, serverError } = useAuthContext();
     const { register, handleSubmit, formState: { errors } } = useForm<LoginFormData>();
-
-    const onSubmit = async (data: LoginFormData) => {
-        const result = await executeLogin(data.email, data.password!);
-        if (result && result.token) {
-            saveAuth(result.token);
-            navigate('/profile');
-        }
-    };
 
     return (
         <div className={styles.authContainer}>
-            <form className={styles.loginForm} onSubmit={handleSubmit(onSubmit)}>
+            <LanguageSwitcher />
+            
+            <form className={styles.loginForm} onSubmit={handleSubmit(login)}>
                 <h1 className={styles.title}>{translate("auth.login")}</h1>
 
                 <div className={styles.field}>
+                    <label className={styles.label}>{translate("auth.email")}</label>
                     <input
                         type="email"
-                        placeholder={translate("auth.email")}
                         className={errors.email ? styles.inputError : styles.input}
-                        {...register("email", { required: true })}
+                        {...register("email", { 
+                            required: translate("auth.error_required"),
+                            pattern: {
+                                value: /^\S+@\S+\.\S+$/,
+                                message: translate("auth.error_email")
+                            }
+                        })}
                     />
+                    {errors.email && <span className={styles.fieldError}>{errors.email.message}</span>}
                 </div>
 
                 <div className={styles.field}>
+                    <label className={styles.label}>{translate("auth.password")}</label>
                     <input
                         type="password"
-                        placeholder={translate("auth.password")}
                         className={errors.password ? styles.inputError : styles.input}
-                        {...register("password", { required: true })}
+                        {...register("password", { 
+                            required: translate("auth.error_required"),
+                            minLength: {
+                                value: 6,
+                                message: translate("auth.error_password_short")
+                            }
+                        })}
                     />
+                    {errors.password && <span className={styles.fieldError}>{errors.password.message}</span>}
                 </div>
 
-                {serverError && <div className={styles.serverError}>{serverError}</div>}
+                {serverError && <div className={styles.errorText}>{serverError}</div>}
 
                 <button type="submit" className={styles.submitBtn} disabled={loading}>
                     {loading ? translate("common.loading") : translate("auth.accept")}

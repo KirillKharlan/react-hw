@@ -1,22 +1,16 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import translationsData from '../locales/translations.json';
+import translationsData from '../shared/locales/translations.json';
 
 
-type Locale = 'en' | 'uk' | 'es';
-
-interface TranslationEntry {
-  [key: string]: string;
-}
+export type Locale = 'en' | 'uk' | 'es' | 'de' | 'fr' | 'pl' | 'pt';
 
 interface Translations {
   [key: string]: {
-    en: string;
-    uk: string;
-    es: string;
+    [key in Locale]?: string;
   };
 }
 
-const translations: Translations = translationsData;
+const translations: Translations = translationsData as Translations;
 
 interface LocalizationContextType {
   locale: Locale;
@@ -30,7 +24,7 @@ export const LocalizationProvider: React.FC<{ children: ReactNode }> = ({ childr
   const [locale, setLocale] = useState<Locale>('uk');
 
   const translate = (key: string, variables?: Record<string, string | number>): string => {
-    let text = translations[key]?.[locale] || key;
+    let text = translations[key]?.[locale] || translations[key]?.['en'] || key;
 
     if (variables) {
       Object.entries(variables).forEach(([varName, value]) => {

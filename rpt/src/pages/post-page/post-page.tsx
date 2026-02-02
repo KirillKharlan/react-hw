@@ -11,7 +11,7 @@ import { useAddLike } from "../../hooks/useAddLike";
 import { useRemoveLike } from "../../hooks/useRemoveLike";
 import { CommentWithAuthor } from "./types";
 import style from "./post-page.module.css";
-import { useLocalization } from '../../shared/context/LocalizationContext'; 
+import { useLocalization } from '../../context/LocalizationContext'; 
 
 const Likesimg = ICONS.likesimg;
 

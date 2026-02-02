@@ -9,6 +9,8 @@ interface IPostContext {
     setInputData: (val: string) => void;
     minLikes: number;
     setMinLikes: (val: number) => void;
+    selectedTag: string;
+    setSelectedTag: (val: string) => void;
     loading: boolean;
     error: string | null;
 }
@@ -19,20 +21,25 @@ export function PostContextProvider({ children }: { children: ReactNode }) {
     const { allPosts, loading, error } = usePosts();
     const [inputData, setInputData] = useState<string>("");
     const [minLikes, setMinLikes] = useState<number>(0);
+    const [selectedTag, setSelectedTag] = useState<string>("");
     const filteredPosts = useMemo(() => {
         return allPosts.filter((post) => {
             const matchesSearch = post.name.toLowerCase().includes(inputData.toLowerCase());
             const matchesLikes = post.likes >= minLikes;
-
-            return matchesSearch && matchesLikes;
+            const matchesTag = selectedTag === "" || post.tags.some((tag) => tag.tagName === selectedTag);
+            return matchesSearch && matchesLikes && matchesTag;
         });
-    }, [allPosts, inputData, minLikes]);
+    }, [allPosts, inputData, minLikes, selectedTag]);
 
     const value: IPostContext = {
         posts: allPosts,
         filteredPosts,
         inputData,
         setInputData,
+        selectedTag: "",
+        setSelectedTag: (val: string) => {
+            console.log("Setting selected tag:", val);
+        },
         minLikes,
         setMinLikes,
         loading,

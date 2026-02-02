@@ -3,7 +3,7 @@ import { ICONS } from "../../shared";
 import { IPropsPostCard, IComment } from './types'; 
 import style from "./postCard.module.css";
 import { usePostActions } from "../../hooks/usePostActions";
-import { useLocalization } from '../../shared/context/LocalizationContext';
+import { useLocalization } from '../../context/LocalizationContext';
 
 const Likesimg = ICONS.likesimg;
 

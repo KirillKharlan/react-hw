@@ -34,8 +34,17 @@
 }
 
 .field {
-    width: 100%;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    text-align: left;
 }
 
 .input {
@@ -49,7 +58,6 @@
     font-weight: 600;
     color: #2382FF;
     outline: none;
-    /* Тінь для кожного поля вводу */
     box-shadow: 
         0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
         0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
@@ -93,7 +101,6 @@
     font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
-    /* Тінь для кнопки */
     box-shadow: 
         0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
         0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 

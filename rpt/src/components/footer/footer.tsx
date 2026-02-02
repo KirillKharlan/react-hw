@@ -1,6 +1,6 @@
 import style from "./footer.module.css";
 import { ICONS } from "../../shared";
-import { useLocalization } from "../../shared/context/LocalizationContext"; 
+import { useLocalization } from "../../context/LocalizationContext"; 
 
 const Telegram = ICONS.telegram;
 const Instagram = ICONS.instagram;

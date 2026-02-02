@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCreatePost } from "../../hooks/useCreatePost";
 import style from "./createpostform.module.css";
-import { useLocalization } from "../../shared/context/LocalizationContext";
+import { useLocalization } from "../../context/LocalizationContext";
 
 export function CreatePostForm({ onSuccess }: { onSuccess: () => void }) {
     const navigate = useNavigate();

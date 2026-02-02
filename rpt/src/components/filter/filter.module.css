@@ -1,222 +1,113 @@
 .filter {
     display: flex;
     flex-direction: column;
-    gap: 1.875rem;
+    align-items: center; 
+    gap: 1.5rem;
     width: clamp(18rem, 30vw, 31.25rem);
     height: 100%;
-    max-height: 67.5rem;
-    order: 0;
     background: #FAF1F1;
-    transition: width 0.3s ease;
+    padding: 1rem 0;
 }
 
-.filterLikesPart {
+.filterLikesPart, .filterTagsPart {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.875rem;
-    padding-bottom: 1.875rem;
-    gap: 1.875rem;
     width: 100%;
-    height: auto;
-    background: #FAF1F1;
-    order: 1;
 }
 
-.searchLikes {
+.searchLikes, .tagsPart {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1.5rem 1rem;
     width: 90%;
-    height: auto;
     background: #FAF1F1;
     border: 0.0625rem solid #000000;
-    border-radius: 0.9375rem;
-    order: 1;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
 }
 
 .likesText, .tagsText {
-    width: 85%;
-    min-height: 3.75rem;
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: 1.2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #2382FF;
-    order: 0;
-    white-space: nowrap;
-}
-
-.likesFields {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1.25rem;
-    width: 95%;
-    height: auto;
-    background: #FAF1F1;
-    border-radius: 1.25rem;
-    order: 1;
-}
-
-.likesField {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    width: calc(50% - 1.25rem); 
-    min-width: 9rem;
-    min-height: 6.25rem; 
-    background: #FAF1F1;
-    border-radius: 1.25rem;
-}
-
-.fieldImg {
-    width: clamp(1.5rem, 2vw, 2.1875rem);
-    height: clamp(1.5rem, 2vw, 2.1875rem);
-    flex-shrink: 0;
-}
-
-.fieldTextDiv {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    width: 100%;
-    height: 3.75rem;
-    background: #FAF1F1;
-    border: 0.0625rem solid #000000;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    border-radius: 1.25rem;
-}
-
-.fieldText {
-    width: auto;
-    text-align: center;
     font-family: 'Quicksand';
     font-weight: 700;
-    font-size: clamp(0.75rem, 1.2vw, 1.25rem);
+    font-size: clamp(1.2rem, 1.8vw, 1.6rem);
     color: #2382FF;
-    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-.filterTagsPart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.likesFields, .tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
     width: 100%;
-    height: auto;
-    order: 2;
-    background: #FAF1F1;
-    padding-bottom: 1.875rem;
 }
 
-.tagsPart {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: auto;
-    min-height: auto;
-    background: #FAF1F1;
-    border: 0.0625rem solid #000000;
-    border-radius: 1.5625rem;
-    box-shadow: 
-        0rem 2.375rem 0.9375rem rgba(0, 0, 0, 0.01), 
-        0rem 1.375rem 0.8125rem rgba(0, 0, 0, 0.05), 
-        0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.09), 
-        0rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
-    padding: 1.5rem 0;
-}
-
-.tags {
+.likesField, .tagField {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    gap: 1.25rem;
-    width: 90%;
-    height: auto;
-    min-height: auto;
-    background: #FAF1F1;
-}
-
-.posts {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 1.875rem 0;
-    gap: 1.875rem;
-    width: auto;
-    height: 100%;
-    flex-grow: 1;
-    overflow-y: auto;
-    background: #FAF1F1;
-}
-
-@media (max-width: 1024px) {
-    .filter {
-        width: 35vw;
-    }
-}
-
-@media (max-width: 768px) {
-    .filter {
-        width: 100%;
-        max-height: none;
-    }
+    justify-content: flex-start;
+    gap: 0.75rem;
     
-    .likesFields {
-        flex-direction: column;
-    }
+    background: #FFFFFF;
+    border: 0.125rem solid #2382FF;
+    border-radius: 0.75rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    min-height: 3.5rem;
+    
+    padding-left: 1.25rem; 
+    padding-right: 0.5rem;
+}
 
-    .likesField {
-        width: 80%;
-        min-height: 5rem;
-    }
+.inputButton {
+    cursor: pointer;
+    width: 1.15rem;
+    height: 1.15rem;
+    margin: 0;
+    flex-shrink: 0;
+    accent-color: #2382FF;
+}
 
-    .tagsPart {
-        width: 95%;
-        padding: 1rem 0;
-    }
+.filterLabel {
+    cursor: pointer;
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: clamp(0.8rem, 1vw, 0.95rem);
+    color: #2382FF;
+    white-space: nowrap;
+    user-select: none;
+    line-height: 1;
+}
 
-    .likesText, .tagsText {
-        white-space: normal;
-        font-size: 1.5rem;
-    }
+.likesField:hover, .tagField:hover {
+    background: #f0f7ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(35, 130, 255, 0.15);
+}
+
+.likesField:has(input:checked),
+.tagField:has(input:checked) {
+    background: #2382FF;
+    border-color: #2382FF;
+}
+
+.likesField:has(input:checked) .filterLabel,
+.tagField:has(input:checked) .filterLabel {
+    color: #FFFFFF;
+}
+
+.likesField:has(input:checked) .inputButton,
+.tagField:has(input:checked) .inputButton {
+    filter: brightness(0) invert(1);
 }
 
 @media (max-width: 480px) {
-    .likesField {
-        width: 95%;
-    }
-    
-    .fieldText {
-        font-size: 1rem;
+    .likesFields, .tags {
+        grid-template-columns: 1fr;
     }
 }

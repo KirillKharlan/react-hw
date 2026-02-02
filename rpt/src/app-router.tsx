@@ -6,8 +6,7 @@ import { LoginPage } from "./pages/login-page/login-page";
 import { RegisterPage } from "./pages/registration-page/registration-page";
 import { ProfilePage } from "./pages/profile-page/profile-page";
 import { NotFoundPage } from "./pages/not-found-page/not-found-page";
-import { useState, useEffect } from "react";
-import { useAuthContext } from "./shared/context/AuthContext";
+import { useAuthContext } from "./context/AuthContext";
 
 
 export function AppRouter() {

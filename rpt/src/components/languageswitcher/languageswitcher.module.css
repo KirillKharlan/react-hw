@@ -1,0 +1,36 @@
+.container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+}
+
+.langBtn {
+    background: white;
+    border: 1px solid #e1e1e1;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.langBtn:hover {
+    background: #f5f7f9;
+}
+
+.langBtn.active {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.wrapper {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 10;
+}

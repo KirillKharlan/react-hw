@@ -39,10 +39,10 @@ export interface IFilteredProps {
 
 export interface IUserForm {
     firstName: string;
-    secondName?: string;
+    secondName: string;
     email: string;
     password?: string;
-    avatar?: string;
+    avatar?: string | null;
 }
 
 export interface UserWithoutPassword {
